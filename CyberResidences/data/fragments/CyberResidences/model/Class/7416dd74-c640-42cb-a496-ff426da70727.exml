@@ -13,6 +13,7 @@
     <COMPID name="smokingPremiumPolicy" mc="Signal" uid="ad3ba198-eca1-4e6b-9096-324513ddbbc5"/>
     <COMPID name="smokingPrestigePolicy" mc="Signal" uid="619b6832-7a69-4331-b78a-077a6b3daa1a"/>
     <EXTID name="Bathroom" mc="Class" uid="dbdff9c4-5000-4f18-9797-a8ac2b9edcde"/>
+    <EXTID name="Rent" mc="Class" uid="1fd2cbde-aa65-4c7a-88af-f4c8f8eeb843"/>
     <EXTID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
     <EXTID name="Room" mc="Class" uid="332d61c8-6d3b-4384-84d1-5436f8489b86"/>
     <EXTID name="Tenant" mc="Class" uid="3e7b8263-ecac-4797-b937-8f78721a8541"/>

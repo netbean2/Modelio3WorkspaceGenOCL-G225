@@ -8,13 +8,13 @@
 <script name="CoExplorer" path="CoExplorer.py" icon-path="" show-menu="true" show-toolbar="true">
 <description></description>
 </script>
-<script name="Online Script >> New" path="OnlinePyScript-New.py" icon-path="" show-menu="true" show-toolbar="true">
+<script name="Online Script &gt;&gt; New" path="OnlinePyScript-New.py" icon-path="" show-menu="true" show-toolbar="true">
 <description></description>
 </script>
-<script name=">> Edit" path="OnlinePyScript-Edit.py" icon-path="" show-menu="true" show-toolbar="true">
+<script name="&gt;&gt; Edit" path="OnlinePyScript-Edit.py" icon-path="" show-menu="true" show-toolbar="true">
 <description></description>
 </script>
-<script name=">> Run" path="OnlinePyScript-Run.py" icon-path="" show-menu="true" show-toolbar="true">
+<script name="&gt;&gt; Run" path="OnlinePyScript-Run.py" icon-path="" show-menu="true" show-toolbar="true">
 <description></description>
 </script>
 </catalog>
