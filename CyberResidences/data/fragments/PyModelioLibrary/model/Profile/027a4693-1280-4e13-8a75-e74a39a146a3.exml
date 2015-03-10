@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="RelationalProfile" version="3">
+  <DEPS>
+    <ID name="RelationalProfile" mc="Profile" uid="027a4693-1280-4e13-8a75-e74a39a146a3"/>
+    <COMPID name="Column" mc="Stereotype" uid="ab1be2c4-b6bb-468a-ab1a-c680c888fce6"/>
+    <COMPID name="Schema" mc="Stereotype" uid="72ba7e4f-0c31-4023-8ae6-e8139c9a247d"/>
+    <COMPID name="Table" mc="Stereotype" uid="47b94eee-55f3-4d8f-85ef-9d1f1db53b96"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="RelationalProfile" mc="Profile" uid="027a4693-1280-4e13-8a75-e74a39a146a3"/>
+    <PID name="PyModelioLibraryModule" mc="ModuleComponent" uid="324dddcc-2feb-4fae-a95a-19ba700a3d86"/>
+    <ATTRIBUTES>
+      <ATT name="JCode"></ATT>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[RelationalProfile]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedStereotype">
+        <COMPID name="Schema" mc="Stereotype" uid="72ba7e4f-0c31-4023-8ae6-e8139c9a247d"/>
+        <COMPID name="Table" mc="Stereotype" uid="47b94eee-55f3-4d8f-85ef-9d1f1db53b96"/>
+        <COMPID name="Column" mc="Stereotype" uid="ab1be2c4-b6bb-468a-ab1a-c680c888fce6"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

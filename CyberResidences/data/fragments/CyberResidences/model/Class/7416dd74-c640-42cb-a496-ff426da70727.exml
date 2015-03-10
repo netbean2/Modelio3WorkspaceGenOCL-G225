@@ -1,0 +1,331 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Bedroom" version="3">
+  <DEPS>
+    <ID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+    <COMPID name="atLeastABed" mc="Signal" uid="493ed7dd-c9b0-40e5-bec0-0a28d8dfb2a1"/>
+    <COMPID name="atLeastOneAdult" mc="Signal" uid="ffbda261-a159-491e-ac72-cdc6e2848a20"/>
+    <COMPID name="deriveNbOfUnits" mc="Signal" uid="9cd3fc03-8fad-43d6-a404-3666ee110980"/>
+    <COMPID name="enoughBathroomsInPrestige" mc="Signal" uid="2966a228-12df-4db4-af2f-14f00e8e2bc1"/>
+    <COMPID name="noBedroomOverload" mc="Signal" uid="0068e211-8432-4f44-b82b-1e8d88e40adf"/>
+    <COMPID name="noEmptyRentedBedrooms" mc="Signal" uid="7e064235-951e-47a5-8945-d99497deefa8"/>
+    <COMPID name="noSquaters" mc="Signal" uid="51004dd3-2e66-4350-9c39-19443cdf9b96"/>
+    <COMPID name="oooBedroomsNotRented" mc="Signal" uid="fce8224b-85ec-431d-a84e-ab255324949f"/>
+    <COMPID name="smokingPremiumPolicy" mc="Signal" uid="ad3ba198-eca1-4e6b-9096-324513ddbbc5"/>
+    <COMPID name="smokingPrestigePolicy" mc="Signal" uid="619b6832-7a69-4331-b78a-077a6b3daa1a"/>
+    <EXTID name="Bathroom" mc="Class" uid="dbdff9c4-5000-4f18-9797-a8ac2b9edcde"/>
+    <EXTID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+    <EXTID name="Room" mc="Class" uid="332d61c8-6d3b-4384-84d1-5436f8489b86"/>
+    <EXTID name="Tenant" mc="Class" uid="3e7b8263-ecac-4797-b937-8f78721a8541"/>
+    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+    <FOREIGNID name="float" mc="DataType" uid="00000004-0000-000b-0000-000000000000"/>
+    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+    <PID name="Buildings" mc="Package" uid="d2fe0991-c8c0-4885-95fa-6fa12b63e24e"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Bedroom]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="nbOfSingleBeds" mc="Attribute" uid="c7a1c322-22af-4894-b4e9-27432d213103"/>
+          <PID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[nbOfSingleBeds]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="nbOfDoubleBeds" mc="Attribute" uid="d65445d9-51fc-43c4-a91c-650d4273bd2b"/>
+          <PID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[nbOfDoubleBeds]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="rate" mc="Attribute" uid="ebb69c7d-2ef4-466b-986e-a030dbf9ee52"/>
+          <PID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[rate]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="float" mc="DataType" uid="00000004-0000-000b-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="isNonSmoking" mc="Attribute" uid="0ea4c518-2fc2-450b-8212-46c07a7d160f"/>
+          <PID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[isNonSmoking]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="nbOfUnits" mc="Attribute" uid="681513d0-faa8-4534-8057-97d6722bd89f"/>
+          <PID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">true</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[nbOfUnits]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID name="bathrooms" mc="AssociationEnd" uid="9b56b622-fe89-4279-9796-918c192e1b62"/>
+          <PID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[3]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[bathrooms]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Bathroom" mc="Class" uid="dbdff9c4-5000-4f18-9797-a8ac2b9edcde"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <REFOBJ>
+                <ID name="bedroom" mc="AssociationEnd" uid="cd19f131-a8c1-4cb5-a193-8224170ebaa8"/>
+                <PID name="Bathroom" mc="Class" uid="dbdff9c4-5000-4f18-9797-a8ac2b9edcde"/>
+              </REFOBJ>
+            </COMP>
+            <COMP relation="Association">
+              <REFOBJ>
+                <ID name="IsInBedroom" mc="Association" uid="daa225e9-c640-4e7e-8b20-71efb45b82dd"/>
+                <PID name="Bathroom" mc="Class" uid="dbdff9c4-5000-4f18-9797-a8ac2b9edcde"/>
+              </REFOBJ>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="tenant" mc="AssociationEnd" uid="85942aea-3da0-4ade-ac04-221e4159ce0c"/>
+          <PID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[tenant]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Tenant" mc="Class" uid="3e7b8263-ecac-4797-b937-8f78721a8541"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <REFOBJ>
+                <ID name="rentedBedrooms" mc="AssociationEnd" uid="1c97b736-e16e-4b2a-b579-4f98d44f1750"/>
+                <PID name="Tenant" mc="Class" uid="3e7b8263-ecac-4797-b937-8f78721a8541"/>
+              </REFOBJ>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="Rent" mc="Association" uid="b4b61293-31af-4e58-bfa8-28312dc8fb62"/>
+                <PID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Rent]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="LinkToClass">
+                    <OBJECT>
+                      <ID name="ClassAssociation" mc="ClassAssociation" uid="2cd502ff-d4f5-4314-b285-a86a84d6ce5e"/>
+                      <PID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"><![CDATA[ClassAssociation]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="ClassPart">
+                          <ID name="Rent" mc="Class" uid="1fd2cbde-aa65-4c7a-88af-f4c8f8eeb843"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="occupants" mc="AssociationEnd" uid="58399c64-f806-4c4a-be8a-081989705481"/>
+          <PID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[occupants]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <REFOBJ>
+                <ID name="occupiedRoom" mc="AssociationEnd" uid="ec212d52-3fd3-4d80-bb83-70cfb19c1ee2"/>
+                <PID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+              </REFOBJ>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="IsOccupiedBy" mc="Association" uid="5d78760b-48d6-44f9-8a1c-41579b075555"/>
+                <PID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[IsOccupiedBy]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="Generalization" mc="Generalization" uid="6e42e6c9-16f3-4238-a8e8-fb7aaea1c0c4"/>
+          <PID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="Room" mc="Class" uid="332d61c8-6d3b-4384-84d1-5436f8489b86"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="atLeastABed" mc="Signal" uid="493ed7dd-c9b0-40e5-bec0-0a28d8dfb2a1"/>
+        <COMPID name="enoughBathroomsInPrestige" mc="Signal" uid="2966a228-12df-4db4-af2f-14f00e8e2bc1"/>
+        <COMPID name="deriveNbOfUnits" mc="Signal" uid="9cd3fc03-8fad-43d6-a404-3666ee110980"/>
+        <COMPID name="noEmptyRentedBedrooms" mc="Signal" uid="7e064235-951e-47a5-8945-d99497deefa8"/>
+        <COMPID name="atLeastOneAdult" mc="Signal" uid="ffbda261-a159-491e-ac72-cdc6e2848a20"/>
+        <COMPID name="noSquaters" mc="Signal" uid="51004dd3-2e66-4350-9c39-19443cdf9b96"/>
+        <COMPID name="noBedroomOverload" mc="Signal" uid="0068e211-8432-4f44-b82b-1e8d88e40adf"/>
+        <COMPID name="oooBedroomsNotRented" mc="Signal" uid="fce8224b-85ec-431d-a84e-ab255324949f"/>
+        <COMPID name="smokingPrestigePolicy" mc="Signal" uid="619b6832-7a69-4331-b78a-077a6b3daa1a"/>
+        <COMPID name="smokingPremiumPolicy" mc="Signal" uid="ad3ba198-eca1-4e6b-9096-324513ddbbc5"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

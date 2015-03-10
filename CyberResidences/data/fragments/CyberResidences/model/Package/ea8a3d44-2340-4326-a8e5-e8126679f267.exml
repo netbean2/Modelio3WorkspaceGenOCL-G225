@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Rents" version="3">
+  <DEPS>
+    <ID name="Rents" mc="Package" uid="ea8a3d44-2340-4326-a8e5-e8126679f267"/>
+    <COMPID name="Person" mc="Class" uid="408f94a6-6353-4edb-b176-6239848498eb"/>
+    <COMPID name="Rents_Constraints" mc="ClassDiagram" uid="33dd7d17-f68d-49e7-aa11-131fc5831552"/>
+    <COMPID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+    <COMPID name="Tenant" mc="Class" uid="3e7b8263-ecac-4797-b937-8f78721a8541"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Rents" mc="Package" uid="ea8a3d44-2340-4326-a8e5-e8126679f267"/>
+    <PID name="CyberResidences" mc="Package" uid="19dd0491-2ea4-498c-a3d1-52a9a5dcaf2b"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Rents]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Person" mc="Class" uid="408f94a6-6353-4edb-b176-6239848498eb"/>
+        <COMPID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+        <COMPID name="Tenant" mc="Class" uid="3e7b8263-ecac-4797-b937-8f78721a8541"/>
+        <OBJECT>
+          <ID name="Gender" mc="Enumeration" uid="b4419489-0f18-4adb-b576-4d66b65b76d9"/>
+          <PID name="Rents" mc="Package" uid="ea8a3d44-2340-4326-a8e5-e8126679f267"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[Gender]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="male" mc="EnumerationLiteral" uid="8bf4fee4-a339-4439-86b0-0d3b9357c890"/>
+                <PID name="Rents" mc="Package" uid="ea8a3d44-2340-4326-a8e5-e8126679f267"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[male]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="female" mc="EnumerationLiteral" uid="409dc64b-9e11-497b-b771-fb57730055a5"/>
+                <PID name="Rents" mc="Package" uid="ea8a3d44-2340-4326-a8e5-e8126679f267"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[female]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Rents_Constraints" mc="ClassDiagram" uid="33dd7d17-f68d-49e7-aa11-131fc5831552"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

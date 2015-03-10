@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ConstraintHelper" version="3">
+  <DEPS>
+    <ID name="ConstraintHelper" mc="Stereotype" uid="125b94b7-1794-4761-8b9b-8c4e9c700343"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ConstraintHelper" mc="Stereotype" uid="125b94b7-1794-4761-8b9b-8c4e9c700343"/>
+    <PID name="OclProfile" mc="Profile" uid="41d47382-8c45-4efb-a665-d01daf0b9c8a"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"><![CDATA[ConstraintHelper.png]]></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[ConstraintHelper]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[ModelElement]]></ATT>
+      <ATT name="Name"><![CDATA[ConstraintHelper]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

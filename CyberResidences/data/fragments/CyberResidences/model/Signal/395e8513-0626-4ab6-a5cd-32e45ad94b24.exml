@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="uniqueNumberApartForPrivateBathroom" version="3">
+  <DEPS>
+    <ID name="uniqueNumberApartForPrivateBathroom" mc="Signal" uid="395e8513-0626-4ab6-a5cd-32e45ad94b24"/>
+    <FOREIGNID name="Invariant" mc="Stereotype" uid="efef56fa-fa3d-4341-890a-d02000539ad6"/>
+    <FOREIGNID name="comment" mc="NoteType" uid="00000000-0000-3e80-0000-000000000000"/>
+    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+    <FOREIGNID name="oclInvariant" mc="NoteType" uid="9a7ef443-6a91-4bc5-bf57-245dc448b8e0"/>
+    <FOREIGNID name="summary" mc="NoteType" uid="00000000-0000-3e84-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="uniqueNumberApartForPrivateBathroom" mc="Signal" uid="395e8513-0626-4ab6-a5cd-32e45ad94b24"/>
+    <PID name="Residence" mc="Class" uid="97587931-2125-4165-b797-b3d6cb2c2a92"/>
+    <ATTRIBUTES>
+      <ATT name="IsEvent">false</ATT>
+      <ATT name="IsException">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[uniqueNumberApartForPrivateBathroom]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="Invariant" mc="Stereotype" uid="efef56fa-fa3d-4341-890a-d02000539ad6"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="08597ed2-7807-422c-a5f5-63969807a2b2"/>
+          <PID name="uniqueNumberApartForPrivateBathroom" mc="Signal" uid="395e8513-0626-4ab6-a5cd-32e45ad94b24"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Invariant on room numbering.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="summary" mc="NoteType" uid="00000000-0000-3e84-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="3d459332-34b3-4a54-8779-140c7f580fd0"/>
+          <PID name="uniqueNumberApartForPrivateBathroom" mc="Signal" uid="395e8513-0626-4ab6-a5cd-32e45ad94b24"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[All rooms have a distinct number, except private bathrooms.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="02dfeb8f-2af1-41ab-9466-20ac8656302e"/>
+          <PID name="uniqueNumberApartForPrivateBathroom" mc="Signal" uid="395e8513-0626-4ab6-a5cd-32e45ad94b24"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Medium]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="comment" mc="NoteType" uid="00000000-0000-3e80-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="860705c6-2438-4b7d-ab1c-a3b47e9715b5"/>
+          <PID name="uniqueNumberApartForPrivateBathroom" mc="Signal" uid="395e8513-0626-4ab6-a5cd-32e45ad94b24"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="oclInvariant" mc="NoteType" uid="9a7ef443-6a91-4bc5-bf57-245dc448b8e0"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ConstrainedStateCollection" version="3">
+  <DEPS>
+    <ID name="ConstrainedStateCollection" mc="Stereotype" uid="4b1de3d4-9ec3-4913-a149-1af89ab58d6c"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ConstrainedStateCollection" mc="Stereotype" uid="4b1de3d4-9ec3-4913-a149-1af89ab58d6c"/>
+    <PID name="ConstraintProfile" mc="Profile" uid="41d47382-8c45-4efb-a665-d01daf0b9c8a"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"><![CDATA[ConstrainedStateCollection.png]]></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[ConstrainedStateCollection]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Package]]></ATT>
+      <ATT name="Name"><![CDATA[ConstrainedStateCollection]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTagType">
+        <OBJECT>
+          <ID name="directory" mc="TagType" uid="9ae7346f-2fa4-453e-82a7-8b9c528d4f83"/>
+          <PID name="ConstrainedStateCollection" mc="Stereotype" uid="4b1de3d4-9ec3-4913-a149-1af89ab58d6c"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"></ATT>
+            <ATT name="Name"><![CDATA[directory]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

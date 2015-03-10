@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ClassB" version="3">
+  <DEPS>
+    <ID name="ClassB" mc="Class" uid="54b931ed-85cc-4772-aa09-7e3964b8f026"/>
+    <EXTID name="ClassA" mc="Class" uid="24f89207-9666-42a3-a467-b85051656175"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ClassB" mc="Class" uid="54b931ed-85cc-4772-aa09-7e3964b8f026"/>
+    <PID name="Associations_Aggregation" mc="Package" uid="a61a89f9-49f3-40e8-a694-e1c9fa85e66b"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ClassB]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID name="someAs" mc="AssociationEnd" uid="765a5f78-363f-4cbe-af32-e9520c29d354"/>
+          <PID name="ClassB" mc="Class" uid="54b931ed-85cc-4772-aa09-7e3964b8f026"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[someAs]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="ClassA" mc="Class" uid="24f89207-9666-42a3-a467-b85051656175"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="someBs" mc="AssociationEnd" uid="5ce797ed-f97a-4be7-a32d-e5e6a0fc09ac"/>
+                <PID name="ClassB" mc="Class" uid="54b931ed-85cc-4772-aa09-7e3964b8f026"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAggregation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"><![CDATA[someBs]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <ID name="ClassB" mc="Class" uid="54b931ed-85cc-4772-aa09-7e3964b8f026"/>
+                  </LINK>
+                  <COMP relation="Opposite">
+                    <COMPID name="someAs" mc="AssociationEnd" uid="765a5f78-363f-4cbe-af32-e9520c29d354"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="R_AB" mc="Association" uid="f57dfeb0-e49f-4be6-8667-c2a6f2cbd149"/>
+                      <PID name="ClassB" mc="Class" uid="54b931ed-85cc-4772-aa09-7e3964b8f026"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"><![CDATA[R_AB]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <COMPID name="R_AB" mc="Association" uid="f57dfeb0-e49f-4be6-8667-c2a6f2cbd149"/>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="sboooConditions" version="3">
+  <DEPS>
+    <ID name="sboooConditions" mc="Signal" uid="cbab7e33-f896-4748-bf5f-443be2e3ead0"/>
+    <FOREIGNID name="Invariant" mc="Stereotype" uid="efef56fa-fa3d-4341-890a-d02000539ad6"/>
+    <FOREIGNID name="comment" mc="NoteType" uid="00000000-0000-3e80-0000-000000000000"/>
+    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+    <FOREIGNID name="oclInvariant" mc="NoteType" uid="9a7ef443-6a91-4bc5-bf57-245dc448b8e0"/>
+    <FOREIGNID name="summary" mc="NoteType" uid="00000000-0000-3e84-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="sboooConditions" mc="Signal" uid="cbab7e33-f896-4748-bf5f-443be2e3ead0"/>
+    <PID name="Rent" mc="Class" uid="1fd2cbde-aa65-4c7a-88af-f4c8f8eeb843"/>
+    <ATTRIBUTES>
+      <ATT name="IsEvent">false</ATT>
+      <ATT name="IsException">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[sboooConditions]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="Invariant" mc="Stereotype" uid="efef56fa-fa3d-4341-890a-d02000539ad6"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="ea5d5355-8e99-4bd2-a45a-87cf4929159e"/>
+          <PID name="sboooConditions" mc="Signal" uid="cbab7e33-f896-4748-bf5f-443be2e3ead0"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Conditions for granting a discount "Some Bathrooms Out Of Order" (SBOOO).]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="summary" mc="NoteType" uid="00000000-0000-3e84-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="61614aee-7683-43b1-bba2-fcf2919b7244"/>
+          <PID name="sboooConditions" mc="Signal" uid="cbab7e33-f896-4748-bf5f-443be2e3ead0"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[A discount if given for a bed room if there are "Some Bathrooms Out Of Order", that is for bedroom with at least one bathroom out of order, but at least one bathroom still available.  The label for this type of discount is SBOO. This type of discount does not apply on economy residences.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="a1e73b1f-44f9-4f1a-9e5c-a8e46a3d26b4"/>
+          <PID name="sboooConditions" mc="Signal" uid="cbab7e33-f896-4748-bf5f-443be2e3ead0"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="oclInvariant" mc="NoteType" uid="9a7ef443-6a91-4bc5-bf57-245dc448b8e0"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="f84d8afa-504a-4811-99aa-6d2c92fdea2b"/>
+          <PID name="sboooConditions" mc="Signal" uid="cbab7e33-f896-4748-bf5f-443be2e3ead0"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Not Easy. Use 'one'. Should world with 'xxxPercentage']]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="comment" mc="NoteType" uid="00000000-0000-3e80-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

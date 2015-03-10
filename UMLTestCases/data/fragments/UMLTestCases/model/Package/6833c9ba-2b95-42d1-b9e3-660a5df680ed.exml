@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="UmlTestCases" version="3">
+  <DEPS>
+    <ID name="UmlTestCases" mc="Package" uid="6833c9ba-2b95-42d1-b9e3-660a5df680ed"/>
+    <COMPID name="ClassModels" mc="Package" uid="473c4ae8-a95a-46c5-a3c7-6571ed501e18"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="UmlTestCases" mc="Package" uid="6833c9ba-2b95-42d1-b9e3-660a5df680ed"/>
+    <PID name="UMLTestCases" mc="Project" uid="54af86bb-d27f-4005-b7f4-91a3b985f2e1"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[UmlTestCases]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="ClassModels" mc="Package" uid="473c4ae8-a95a-46c5-a3c7-6571ed501e18"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

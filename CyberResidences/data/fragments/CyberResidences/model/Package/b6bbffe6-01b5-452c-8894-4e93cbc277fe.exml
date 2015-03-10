@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="States" version="3">
+  <DEPS>
+    <ID name="States" mc="Package" uid="b6bbffe6-01b5-452c-8894-4e93cbc277fe"/>
+    <EXTID name="CyberResidences" mc="Package" uid="19dd0491-2ea4-498c-a3d1-52a9a5dcaf2b"/>
+    <FOREIGNID name="ConstrainedStateCollection" mc="Stereotype" uid="4b1de3d4-9ec3-4913-a149-1af89ab58d6c"/>
+    <FOREIGNID name="directory" mc="TagType" uid="9ae7346f-2fa4-453e-82a7-8b9c528d4f83"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="States" mc="Package" uid="b6bbffe6-01b5-452c-8894-4e93cbc277fe"/>
+    <PID name="CyberResidences" mc="Package" uid="1a6508a3-bafb-4ff3-bf63-fa6b0d3163f9"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[States]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="ConstrainedStateCollection" mc="Stereotype" uid="4b1de3d4-9ec3-4913-a149-1af89ab58d6c"/>
+      </LINK>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Dependency" uid="fb3cb54d-d603-460d-aa4f-03cfa7bece2b"/>
+          <PID name="States" mc="Package" uid="b6bbffe6-01b5-452c-8894-4e93cbc277fe"/>
+          <ATTRIBUTES>
+            <ATT name="DependsOnId"></ATT>
+            <ATT name="DependsOnName"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="CyberResidences" mc="Package" uid="19dd0491-2ea4-498c-a3d1-52a9a5dcaf2b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="592f12dc-9dd3-4709-864a-7e2e7a2cd201"/>
+          <PID name="States" mc="Package" uid="b6bbffe6-01b5-452c-8894-4e93cbc277fe"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="56525284-1c8f-437e-8565-c58495c50ba2"/>
+                <PID name="States" mc="Package" uid="b6bbffe6-01b5-452c-8894-4e93cbc277fe"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[gen\ocl\states]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="directory" mc="TagType" uid="9ae7346f-2fa4-453e-82a7-8b9c528d4f83"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

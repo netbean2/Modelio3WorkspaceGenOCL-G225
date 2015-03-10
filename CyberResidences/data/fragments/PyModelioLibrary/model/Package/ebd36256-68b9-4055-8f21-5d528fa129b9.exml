@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="pymodeliolibrary" version="3">
+  <DEPS>
+    <ID name="pymodeliolibrary" mc="Package" uid="ebd36256-68b9-4055-8f21-5d528fa129b9"/>
+    <COMPID name="PyModelioLibrary" mc="Artifact" uid="86663293-7ecf-4eae-9cc5-d71a39870054"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="pymodeliolibrary" mc="Package" uid="ebd36256-68b9-4055-8f21-5d528fa129b9"/>
+    <PID name="PyModelioLibrary" mc="Project" uid="2f877dad-e3cf-4db0-96fe-b09302d760a3"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[pymodeliolibrary]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="PyModelioLibrary" mc="Artifact" uid="86663293-7ecf-4eae-9cc5-d71a39870054"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

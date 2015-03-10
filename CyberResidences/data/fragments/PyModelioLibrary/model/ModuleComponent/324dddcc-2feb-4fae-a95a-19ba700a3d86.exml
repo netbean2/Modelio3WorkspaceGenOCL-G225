@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="PyModelioModule" version="3">
+  <DEPS>
+    <ID name="PyModelioModule" mc="ModuleComponent" uid="324dddcc-2feb-4fae-a95a-19ba700a3d86"/>
+    <COMPID name="ConstraintProfile" mc="Profile" uid="41d47382-8c45-4efb-a665-d01daf0b9c8a"/>
+    <COMPID name="RelationalProfile" mc="Profile" uid="027a4693-1280-4e13-8a75-e74a39a146a3"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="PyModelioModule" mc="ModuleComponent" uid="324dddcc-2feb-4fae-a95a-19ba700a3d86"/>
+    <ATTRIBUTES>
+      <ATT name="LicenseKey">0</ATT>
+      <ATT name="MajVersion">0</ATT>
+      <ATT name="MinVersion">0</ATT>
+      <ATT name="MinMinVersion"></ATT>
+      <ATT name="MinBinVersionCompatibility"></ATT>
+      <ATT name="JavaClassName"></ATT>
+      <ATT name="State">SoModuleStateActivated</ATT>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[PyModelioModule]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedProfile">
+        <COMPID name="RelationalProfile" mc="Profile" uid="027a4693-1280-4e13-8a75-e74a39a146a3"/>
+        <COMPID name="ConstraintProfile" mc="Profile" uid="41d47382-8c45-4efb-a665-d01daf0b9c8a"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

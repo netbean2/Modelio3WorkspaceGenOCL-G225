@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="CyberResidences" version="3">
+  <DEPS>
+    <ID name="CyberResidences" mc="Project" uid="a98c0364-4e36-4e47-a76e-ff07203c6977"/>
+    <COMPID name="CyberResidences" mc="DiagramSet" uid="b7278a54-1fd9-4ac4-b785-16baf4139e62"/>
+    <COMPID name="CyberResidences" mc="Package" uid="1a6508a3-bafb-4ff3-bf63-fa6b0d3163f9"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="CyberResidences" mc="Project" uid="a98c0364-4e36-4e47-a76e-ff07203c6977"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[CyberResidences]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DiagramRoot">
+        <COMPID name="CyberResidences" mc="DiagramSet" uid="b7278a54-1fd9-4ac4-b785-16baf4139e62"/>
+      </COMP>
+      <COMP relation="Model">
+        <COMPID name="CyberResidences" mc="Package" uid="1a6508a3-bafb-4ff3-bf63-fa6b0d3163f9"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

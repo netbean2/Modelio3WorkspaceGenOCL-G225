@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Operations Class diagram" version="3">
+  <DEPS>
+    <ID name="Operations Class diagram" mc="ClassDiagram" uid="29ceed81-d1e2-428c-848b-072ca52be740"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Operations Class diagram" mc="ClassDiagram" uid="29ceed81-d1e2-428c-848b-072ca52be740"/>
+    <PID name="Operations" mc="Package" uid="0bfd2353-7481-4b97-beda-95bfe44f09c3"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">498</ATT>
+      <ATT name="UiData"><![CDATA[eJztm21vqkgUx78KMfsWy6PItrc3Vk3X1GqjXTe7b8wARzu3wBhmvNZ++juguC21liKivSFpLIxwZob5/TkP4MX3J88VfkJAMfG/VeSqVBG+X170rR9gMwE7vKkisOUMvlVIMK16xAEXk6qD0TRAXhUczEhQpQwx/FgFFzzwGV3t2/FB194w2m+t9iuCh36QYLzpVKpcXtwFZAYBWwo+8nhfLlqSOWshhvh3I+TOYT0If+66lbPLi7P4hDenDtnShcqrKSi7pkDD42nVJgFUV+emGF8TURs54MSdtZ/YACYpe+lxE+szBXhiLavDxxhthhsOTNDcZYlJnq2ms2viAbiIgcPHkbhmt2GT8DNs4SN3EaXrlRAU0wZw6rLoyKCImlK3xbpWt0TJUGykKxYYmrT7anNr7MYnC7+LLHATHQ9ZgP1p5bLPz+AAEJ8KUffC+qpcnEVH75wUcaHjN4k3IxSHJt7pIoWp5gN2nQBCC11M2StC1AyQ2y56fuZwR1PaC+oBHwbypyEP61VSpHP+p8nquWl+Gnft4LiHrK+EtXNszW5jOBz378bXg/7fd6POsHPVbSfmfkX4CiN/M3MWzCGN1cb9/SHMdnq99mDUaf9z228lbbb9ufdnqmt6A8s/Oj6DwEcuHWFY3PIzNmPp9Xvtg8pbMDTLUSeGJNZssyZqmmyKlilLouEYek1XdUdR6jnoOuqscToq1vdV8V2APRQse9Fq5Spo6TyznGtp5cxNPS331rRWornN4C3CfsjFnogaGRANrdIZsuEB+IIFHNZe3PJX1FJ8RFUvzMXUShy3GVwtfAqD9IEsxth+YyjpICfcU33gISNTj7BckMDJwRpD9uOYcicJZG/nHQ3N3bIAnzeFLMoCZLMMM9yw+UIpZjafRCme4Ejrzc3OACh+RpYL1wGZz4oXvSwV64lK6R8iSJKzJPSI8c6tOYNpiB6nshE37M9iGChPQye2Xh1R/jyZqTP8fMiUk1lxiWZk8DUVWUA9W//bfVOVs+TrJK5CxAxvyhKnwXDqtL1k+KCBPrAH4mQG+OWKZslHN5S+BPQIvr7grFM+WNq5uYiCVnNqMhggGipyRE03bdGSpXBLRaBYujYxnByIJLMRwU6xDv93iPLTji1jmL/Vj2RJx09Foalz8K+jUKTXkCSpuogMTQ59xkQ0bUMXFdVEsmoaNV36gJCUCl3761KoX0WoWdLoExGqUnDaXIRQVbummZIMIv8wRM0ETTQVUxFNXVNVCzl1Xc/Hla62GmtsSq2eqlbT5W1KltoDjh+k8f5tNuc6ufbih2vDuO0Isi5rDieRr8Uo7JmsKVlKCqnQPFK1Vim4nqAkXwb4mnzmSOaBi2BKlvJCKmL/I/4xbqgFlxx+E2Bzv6GGq58ztSmBzpKNY9+HIHpgFpHMd/Z/HyuHaq5SdHZeRgfvRAd+qsfkO0ODLMnnO1weKRhQC85B38BQ4lhESKBmy6+2kgr0OGGAWnBeVaJ6CmHA268S/WA64nvYRvlWKRK9vH0PtLpm6oMQQU1RxFQzpZgemsLmDcCoTBPKNGwN3wIchq0rLvKMeJIlxBSyLTjdLF9T3WpwyGfoupilkW5Z38ylvvnhTaWL/Ue64/6YOPxq2grQgq9mFy25JF+rbHfOH980nJUBWnVDE/x+8cpiMS79c2cd5cdLOMlqrKLWdbXb+Lc9GF81mjfhr0x6rbxd4btWXi7V/9S8ZGBnnaRkIG8G7vt3hcVBvwCBuRri]]></ATT>
+      <ATT name="PdeProperties"></ATT>
+      <ATT name="Name"><![CDATA[Operations Class diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

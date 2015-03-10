@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Rates" version="3">
+  <DEPS>
+    <ID name="Rates" mc="Package" uid="0e8266dd-dfc9-4238-a1b4-7500d4e25302"/>
+    <COMPID name="Discount" mc="Class" uid="7efd39a0-e33a-4ba8-afd9-0f3b519dfa60"/>
+    <COMPID name="Rates_Constraints" mc="ClassDiagram" uid="bae81af2-0c4f-4e03-8dff-3e8a544c3428"/>
+    <COMPID name="Rent" mc="Class" uid="1fd2cbde-aa65-4c7a-88af-f4c8f8eeb843"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Rates" mc="Package" uid="0e8266dd-dfc9-4238-a1b4-7500d4e25302"/>
+    <PID name="CyberResidences" mc="Package" uid="19dd0491-2ea4-498c-a3d1-52a9a5dcaf2b"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Rates]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Rent" mc="Class" uid="1fd2cbde-aa65-4c7a-88af-f4c8f8eeb843"/>
+        <COMPID name="Discount" mc="Class" uid="7efd39a0-e33a-4ba8-afd9-0f3b519dfa60"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Rates_Constraints" mc="ClassDiagram" uid="bae81af2-0c4f-4e03-8dff-3e8a544c3428"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

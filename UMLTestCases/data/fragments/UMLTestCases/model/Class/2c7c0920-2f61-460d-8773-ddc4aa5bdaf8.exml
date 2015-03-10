@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ClassA" version="3">
+  <DEPS>
+    <ID name="ClassA" mc="Class" uid="2c7c0920-2f61-460d-8773-ddc4aa5bdaf8"/>
+    <EXTID name="ClassB" mc="Class" uid="c19339ee-2486-484b-b510-7ba8196a82c3"/>
+    <EXTID name="ClassC" mc="Class" uid="59fd210a-9673-4b1a-b65d-f178643651a4"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ClassA" mc="Class" uid="2c7c0920-2f61-460d-8773-ddc4aa5bdaf8"/>
+    <PID name="Associations_Class" mc="Package" uid="2522897c-144c-4f90-abe9-8b7277950484"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ClassA]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedEnd">
+        <REFOBJ>
+          <ID name="someBs" mc="AssociationEnd" uid="c1748bf5-cb39-4057-916f-fd8e40c8e235"/>
+          <PID name="ClassB" mc="Class" uid="c19339ee-2486-484b-b510-7ba8196a82c3"/>
+        </REFOBJ>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

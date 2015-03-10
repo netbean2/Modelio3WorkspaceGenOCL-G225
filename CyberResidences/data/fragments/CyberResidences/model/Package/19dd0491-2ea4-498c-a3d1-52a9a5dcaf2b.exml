@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="CyberResidences" version="3">
+  <DEPS>
+    <ID name="CyberResidences" mc="Package" uid="19dd0491-2ea4-498c-a3d1-52a9a5dcaf2b"/>
+    <COMPID name="Buildings" mc="Package" uid="d2fe0991-c8c0-4885-95fa-6fa12b63e24e"/>
+    <COMPID name="CyberResidence_FullView" mc="ClassDiagram" uid="8c9fbf71-7e94-4051-9635-be891a8e4724"/>
+    <COMPID name="Rates" mc="Package" uid="0e8266dd-dfc9-4238-a1b4-7500d4e25302"/>
+    <COMPID name="Rents" mc="Package" uid="ea8a3d44-2340-4326-a8e5-e8126679f267"/>
+    <FOREIGNID name="ConstrainedModel" mc="Stereotype" uid="b6fe0933-5bf5-4b56-9684-41b46db285d4"/>
+    <FOREIGNID name="outputDirectory" mc="TagType" uid="fb39866f-e572-4e3a-9ae5-8f6ff7029f6f"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="CyberResidences" mc="Package" uid="19dd0491-2ea4-498c-a3d1-52a9a5dcaf2b"/>
+    <PID name="CyberResidences" mc="Package" uid="1a6508a3-bafb-4ff3-bf63-fa6b0d3163f9"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[CyberResidences]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Buildings" mc="Package" uid="d2fe0991-c8c0-4885-95fa-6fa12b63e24e"/>
+        <COMPID name="Rents" mc="Package" uid="ea8a3d44-2340-4326-a8e5-e8126679f267"/>
+        <COMPID name="Rates" mc="Package" uid="0e8266dd-dfc9-4238-a1b4-7500d4e25302"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="ConstrainedModel" mc="Stereotype" uid="b6fe0933-5bf5-4b56-9684-41b46db285d4"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="01509f21-2dc4-4611-b789-a1c8c74cd682"/>
+          <PID name="CyberResidences" mc="Package" uid="19dd0491-2ea4-498c-a3d1-52a9a5dcaf2b"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="709b073f-1dff-4021-b20f-359c26c46ce4"/>
+                <PID name="CyberResidences" mc="Package" uid="19dd0491-2ea4-498c-a3d1-52a9a5dcaf2b"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[gen\ocl]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="outputDirectory" mc="TagType" uid="fb39866f-e572-4e3a-9ae5-8f6ff7029f6f"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="CyberResidence_FullView" mc="ClassDiagram" uid="8c9fbf71-7e94-4051-9635-be891a8e4724"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

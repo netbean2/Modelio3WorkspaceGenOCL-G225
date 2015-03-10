@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="PyModelioLibrary" version="3">
+  <DEPS>
+    <ID name="PyModelioLibrary" mc="Project" uid="2f877dad-e3cf-4db0-96fe-b09302d760a3"/>
+    <COMPID name="PyModelioLibrary" mc="DiagramSet" uid="142e9bdb-7343-4efe-a9d3-8e3af8e9ab51"/>
+    <COMPID name="pymodeliolibrary" mc="Package" uid="ebd36256-68b9-4055-8f21-5d528fa129b9"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="PyModelioLibrary" mc="Project" uid="2f877dad-e3cf-4db0-96fe-b09302d760a3"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[PyModelioLibrary]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DiagramRoot">
+        <COMPID name="PyModelioLibrary" mc="DiagramSet" uid="142e9bdb-7343-4efe-a9d3-8e3af8e9ab51"/>
+      </COMP>
+      <COMP relation="Model">
+        <COMPID name="pymodeliolibrary" mc="Package" uid="ebd36256-68b9-4055-8f21-5d528fa129b9"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

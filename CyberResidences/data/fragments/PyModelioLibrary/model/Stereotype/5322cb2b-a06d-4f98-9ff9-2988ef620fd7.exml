@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ConstrainedState" version="3">
+  <DEPS>
+    <ID name="ConstrainedState" mc="Stereotype" uid="5322cb2b-a06d-4f98-9ff9-2988ef620fd7"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ConstrainedState" mc="Stereotype" uid="5322cb2b-a06d-4f98-9ff9-2988ef620fd7"/>
+    <PID name="ConstraintProfile" mc="Profile" uid="41d47382-8c45-4efb-a665-d01daf0b9c8a"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"><![CDATA[ConstrainedState.png]]></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[ConstrainedState]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Package]]></ATT>
+      <ATT name="Name"><![CDATA[ConstrainedState]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTagType">
+        <OBJECT>
+          <ID name="googleSpreadsheetURL" mc="TagType" uid="e4f96042-c47c-4b60-a8bf-b75d2cabbca7"/>
+          <PID name="ConstrainedState" mc="Stereotype" uid="5322cb2b-a06d-4f98-9ff9-2988ef620fd7"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"></ATT>
+            <ATT name="Name"><![CDATA[googleSpreadsheetURL]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="filename" mc="TagType" uid="b441a0f6-3432-4453-b09c-8d095dce5196"/>
+          <PID name="ConstrainedState" mc="Stereotype" uid="5322cb2b-a06d-4f98-9ff9-2988ef620fd7"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"></ATT>
+            <ATT name="Name"><![CDATA[filename]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

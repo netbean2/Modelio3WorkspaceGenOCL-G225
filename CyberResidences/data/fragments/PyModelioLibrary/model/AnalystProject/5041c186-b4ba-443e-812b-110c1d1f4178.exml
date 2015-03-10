@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="PyModelioLibrary" version="3">
+  <DEPS>
+    <ID name="PyModelioLibrary" mc="AnalystProject" uid="5041c186-b4ba-443e-812b-110c1d1f4178"/>
+    <COMPID name="PyModelioLibrary" mc="PropertyContainer" uid="8116e692-0af9-44cb-9832-c567f4c528d4"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="PyModelioLibrary" mc="AnalystProject" uid="5041c186-b4ba-443e-812b-110c1d1f4178"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[PyModelioLibrary]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="PropertyRoot">
+        <COMPID name="PyModelioLibrary" mc="PropertyContainer" uid="8116e692-0af9-44cb-9832-c567f4c528d4"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

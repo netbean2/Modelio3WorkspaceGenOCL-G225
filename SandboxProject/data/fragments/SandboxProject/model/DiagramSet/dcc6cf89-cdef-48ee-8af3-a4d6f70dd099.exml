@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SandboxProject" version="3">
+  <DEPS>
+    <ID name="SandboxProject" mc="DiagramSet" uid="dcc6cf89-cdef-48ee-8af3-a4d6f70dd099"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="SandboxProject" mc="DiagramSet" uid="dcc6cf89-cdef-48ee-8af3-a4d6f70dd099"/>
+    <PID name="SandboxProject" mc="Project" uid="71b81111-7661-4b52-b7d0-4722384e0e26"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[SandboxProject]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

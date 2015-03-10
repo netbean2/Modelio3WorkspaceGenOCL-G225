@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="sandboxproject" version="3">
+  <DEPS>
+    <ID name="sandboxproject" mc="Package" uid="b0799a9d-7bfa-4822-803b-c811acb9ddde"/>
+    <COMPID name="overview diagram" mc="ClassDiagram" uid="63818c48-0dee-422e-8820-41d100a9bf32"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="sandboxproject" mc="Package" uid="b0799a9d-7bfa-4822-803b-c811acb9ddde"/>
+    <PID name="SandboxProject" mc="Project" uid="71b81111-7661-4b52-b7d0-4722384e0e26"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[sandboxproject]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Product">
+        <COMPID name="overview diagram" mc="ClassDiagram" uid="63818c48-0dee-422e-8820-41d100a9bf32"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

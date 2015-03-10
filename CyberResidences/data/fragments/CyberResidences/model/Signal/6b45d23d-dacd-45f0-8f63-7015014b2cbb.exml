@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="marriageInSameGroup" version="3">
+  <DEPS>
+    <ID name="marriageInSameGroup" mc="Signal" uid="6b45d23d-dacd-45f0-8f63-7015014b2cbb"/>
+    <FOREIGNID name="Invariant" mc="Stereotype" uid="efef56fa-fa3d-4341-890a-d02000539ad6"/>
+    <FOREIGNID name="comment" mc="NoteType" uid="00000000-0000-3e80-0000-000000000000"/>
+    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+    <FOREIGNID name="oclInvariant" mc="NoteType" uid="9a7ef443-6a91-4bc5-bf57-245dc448b8e0"/>
+    <FOREIGNID name="summary" mc="NoteType" uid="00000000-0000-3e84-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="marriageInSameGroup" mc="Signal" uid="6b45d23d-dacd-45f0-8f63-7015014b2cbb"/>
+    <PID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+    <ATTRIBUTES>
+      <ATT name="IsEvent">false</ATT>
+      <ATT name="IsException">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[marriageInSameGroup]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="Invariant" mc="Stereotype" uid="efef56fa-fa3d-4341-890a-d02000539ad6"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="7ddb1ffd-d5f3-4f61-8613-cc1cd347bfac"/>
+          <PID name="marriageInSameGroup" mc="Signal" uid="6b45d23d-dacd-45f0-8f63-7015014b2cbb"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Consorts in the same group.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="summary" mc="NoteType" uid="00000000-0000-3e84-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="a98f5927-2f3f-490d-a8fe-a0d69ec23760"/>
+          <PID name="marriageInSameGroup" mc="Signal" uid="6b45d23d-dacd-45f0-8f63-7015014b2cbb"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[A resident and his or her consort occupies a room of the same group.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="f6264bbd-a7e5-4467-a890-21bb023112e2"/>
+          <PID name="marriageInSameGroup" mc="Signal" uid="6b45d23d-dacd-45f0-8f63-7015014b2cbb"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="oclInvariant" mc="NoteType" uid="9a7ef443-6a91-4bc5-bf57-245dc448b8e0"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="83f1805a-62bd-4e97-8fda-ac184c547b9f"/>
+          <PID name="marriageInSameGroup" mc="Signal" uid="6b45d23d-dacd-45f0-8f63-7015014b2cbb"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Medium]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="comment" mc="NoteType" uid="00000000-0000-3e80-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

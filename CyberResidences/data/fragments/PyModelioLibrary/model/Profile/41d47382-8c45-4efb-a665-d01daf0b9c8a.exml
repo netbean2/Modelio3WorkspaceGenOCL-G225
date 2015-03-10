@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ConstraintProfile" version="3">
+  <DEPS>
+    <ID name="ConstraintProfile" mc="Profile" uid="41d47382-8c45-4efb-a665-d01daf0b9c8a"/>
+    <COMPID name="AttributeDefinition" mc="Stereotype" uid="c94cd276-eab4-4494-8d61-fe6c6d7d9231"/>
+    <COMPID name="CDefine" mc="Stereotype" uid="d84030aa-3f5c-45cc-90d1-6af1bf62f1fd"/>
+    <COMPID name="ConstrainedModel" mc="Stereotype" uid="b6fe0933-5bf5-4b56-9684-41b46db285d4"/>
+    <COMPID name="ConstrainedState" mc="Stereotype" uid="5322cb2b-a06d-4f98-9ff9-2988ef620fd7"/>
+    <COMPID name="ConstrainedStateCollection" mc="Stereotype" uid="4b1de3d4-9ec3-4913-a149-1af89ab58d6c"/>
+    <COMPID name="Constraint" mc="Stereotype" uid="39cc7eaa-00b1-4783-9f07-d89ba7e68a4d"/>
+    <COMPID name="ConstraintDiagram" mc="Stereotype" uid="5f24bf92-e9a1-454d-98aa-ebe1b4cfce4a"/>
+    <COMPID name="ConstraintHelper" mc="Stereotype" uid="125b94b7-1794-4761-8b9b-8c4e9c700343"/>
+    <COMPID name="Invariant" mc="Stereotype" uid="efef56fa-fa3d-4341-890a-d02000539ad6"/>
+    <COMPID name="OperationDefinition" mc="Stereotype" uid="4c71437c-9288-4b18-995d-f1017fd65028"/>
+    <COMPID name="PostCondition" mc="Stereotype" uid="a939e19d-2d6e-425d-8e5f-f9f78aa42964"/>
+    <COMPID name="PreCondition" mc="Stereotype" uid="c36c1152-78ff-49ee-981d-6fb42c33471a"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ConstraintProfile" mc="Profile" uid="41d47382-8c45-4efb-a665-d01daf0b9c8a"/>
+    <PID name="PyModelioLibraryModule" mc="ModuleComponent" uid="324dddcc-2feb-4fae-a95a-19ba700a3d86"/>
+    <ATTRIBUTES>
+      <ATT name="JCode"></ATT>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ConstraintProfile]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedStereotype">
+        <COMPID name="Constraint" mc="Stereotype" uid="39cc7eaa-00b1-4783-9f07-d89ba7e68a4d"/>
+        <COMPID name="Invariant" mc="Stereotype" uid="efef56fa-fa3d-4341-890a-d02000539ad6"/>
+        <COMPID name="AttributeDefinition" mc="Stereotype" uid="c94cd276-eab4-4494-8d61-fe6c6d7d9231"/>
+        <COMPID name="OperationDefinition" mc="Stereotype" uid="4c71437c-9288-4b18-995d-f1017fd65028"/>
+        <COMPID name="PreCondition" mc="Stereotype" uid="c36c1152-78ff-49ee-981d-6fb42c33471a"/>
+        <COMPID name="PostCondition" mc="Stereotype" uid="a939e19d-2d6e-425d-8e5f-f9f78aa42964"/>
+        <COMPID name="ConstraintHelper" mc="Stereotype" uid="125b94b7-1794-4761-8b9b-8c4e9c700343"/>
+        <COMPID name="ConstrainedModel" mc="Stereotype" uid="b6fe0933-5bf5-4b56-9684-41b46db285d4"/>
+        <COMPID name="ConstraintDiagram" mc="Stereotype" uid="5f24bf92-e9a1-454d-98aa-ebe1b4cfce4a"/>
+        <COMPID name="CDefine" mc="Stereotype" uid="d84030aa-3f5c-45cc-90d1-6af1bf62f1fd"/>
+        <COMPID name="ConstrainedState" mc="Stereotype" uid="5322cb2b-a06d-4f98-9ff9-2988ef620fd7"/>
+        <COMPID name="ConstrainedStateCollection" mc="Stereotype" uid="4b1de3d4-9ec3-4913-a149-1af89ab58d6c"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

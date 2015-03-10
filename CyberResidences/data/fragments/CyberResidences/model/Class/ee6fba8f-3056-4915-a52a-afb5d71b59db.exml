@@ -1,0 +1,263 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Resident" version="3">
+  <DEPS>
+    <ID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+    <COMPID name="adultMarried" mc="Signal" uid="f839c4c2-2b88-4c84-b781-b8c7f6b1edae"/>
+    <COMPID name="childNonSmoking" mc="Signal" uid="14cc3139-0f24-4116-85d7-980765b615ef"/>
+    <COMPID name="childTutored" mc="Signal" uid="19021d29-1e26-4a55-9c85-de3ad911831a"/>
+    <COMPID name="marriageAntiReflexivity" mc="Signal" uid="a889b9da-0c69-4141-8ae1-4ada8b370a75"/>
+    <COMPID name="marriageInSameGroup" mc="Signal" uid="6b45d23d-dacd-45f0-8f63-7015014b2cbb"/>
+    <COMPID name="marriageSymmetry" mc="Signal" uid="4c4b5c4e-9dcb-4603-81ba-8150a3dcd559"/>
+    <COMPID name="noTutorForAdults" mc="Signal" uid="63fa5d24-618b-4a3c-9b9e-e92646605602"/>
+    <COMPID name="tutorAdult" mc="Signal" uid="d41a3211-0110-47bd-9589-8393c8646b72"/>
+    <COMPID name="tutorInSameGroup" mc="Signal" uid="019fbc25-a7b0-41b2-a5d9-ff6c48994815"/>
+    <EXTID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+    <EXTID name="Person" mc="Class" uid="408f94a6-6353-4edb-b176-6239848498eb"/>
+    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+    <PID name="Rents" mc="Package" uid="ea8a3d44-2340-4326-a8e5-e8126679f267"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Resident]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="isSmoker" mc="Attribute" uid="85f51834-d3d9-4810-97a8-c54d0b49d28c"/>
+          <PID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[isSmoker]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID name="occupiedRoom" mc="AssociationEnd" uid="ec212d52-3fd3-4d80-bb83-70cfb19c1ee2"/>
+          <PID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[occupiedRoom]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <REFOBJ>
+                <ID name="occupants" mc="AssociationEnd" uid="58399c64-f806-4c4a-be8a-081989705481"/>
+                <PID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+              </REFOBJ>
+            </COMP>
+            <COMP relation="Association">
+              <REFOBJ>
+                <ID name="IsOccupiedBy" mc="Association" uid="5d78760b-48d6-44f9-8a1c-41579b075555"/>
+                <PID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+              </REFOBJ>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="consort" mc="AssociationEnd" uid="327aedfa-d27d-44b0-a29b-3b39f86ec9d8"/>
+          <PID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[consort]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="AssociationEnd" uid="2a840276-88b6-4d18-bc92-d89d1f712453"/>
+                <PID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <ID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+                  </LINK>
+                  <COMP relation="Opposite">
+                    <COMPID name="consort" mc="AssociationEnd" uid="327aedfa-d27d-44b0-a29b-3b39f86ec9d8"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="IsMarriedWith" mc="Association" uid="d124f514-6505-4b44-a357-e0f61d5a6d50"/>
+                      <PID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"><![CDATA[IsMarriedWith]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <COMPID name="IsMarriedWith" mc="Association" uid="d124f514-6505-4b44-a357-e0f61d5a6d50"/>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="" mc="AssociationEnd" uid="2a840276-88b6-4d18-bc92-d89d1f712453"/>
+        <OBJECT>
+          <ID name="tutored" mc="AssociationEnd" uid="09af5490-936c-4497-8c66-1a5df0b5911c"/>
+          <PID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[tutored]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="tutors" mc="AssociationEnd" uid="622a1c67-0227-49d0-9b4e-4cf843b03aa8"/>
+                <PID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[2]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"><![CDATA[tutors]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <ID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+                  </LINK>
+                  <COMP relation="Opposite">
+                    <COMPID name="tutored" mc="AssociationEnd" uid="09af5490-936c-4497-8c66-1a5df0b5911c"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="IsTutoredBy" mc="Association" uid="0662b245-8d76-4f7e-b58e-7550361567fb"/>
+                      <PID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"><![CDATA[IsTutoredBy]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <COMPID name="IsTutoredBy" mc="Association" uid="0662b245-8d76-4f7e-b58e-7550361567fb"/>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="tutors" mc="AssociationEnd" uid="622a1c67-0227-49d0-9b4e-4cf843b03aa8"/>
+      </COMP>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="Generalization" mc="Generalization" uid="01abf3d7-a39f-4849-9be4-5d4a60895517"/>
+          <PID name="Resident" mc="Class" uid="ee6fba8f-3056-4915-a52a-afb5d71b59db"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="Person" mc="Class" uid="408f94a6-6353-4edb-b176-6239848498eb"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="tutorAdult" mc="Signal" uid="d41a3211-0110-47bd-9589-8393c8646b72"/>
+        <COMPID name="childTutored" mc="Signal" uid="19021d29-1e26-4a55-9c85-de3ad911831a"/>
+        <COMPID name="noTutorForAdults" mc="Signal" uid="63fa5d24-618b-4a3c-9b9e-e92646605602"/>
+        <COMPID name="childNonSmoking" mc="Signal" uid="14cc3139-0f24-4116-85d7-980765b615ef"/>
+        <COMPID name="tutorInSameGroup" mc="Signal" uid="019fbc25-a7b0-41b2-a5d9-ff6c48994815"/>
+        <COMPID name="adultMarried" mc="Signal" uid="f839c4c2-2b88-4c84-b781-b8c7f6b1edae"/>
+        <COMPID name="marriageSymmetry" mc="Signal" uid="4c4b5c4e-9dcb-4603-81ba-8150a3dcd559"/>
+        <COMPID name="marriageAntiReflexivity" mc="Signal" uid="a889b9da-0c69-4141-8ae1-4ada8b370a75"/>
+        <COMPID name="marriageInSameGroup" mc="Signal" uid="6b45d23d-dacd-45f0-8f63-7015014b2cbb"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

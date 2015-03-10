@@ -1,0 +1,145 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ClassB" version="3">
+  <DEPS>
+    <ID name="ClassB" mc="Class" uid="69f9578e-e73d-47e7-9e0f-a18e34390fdf"/>
+    <EXTID name="ClassA" mc="Class" uid="9f65d34d-cdd1-4dca-b96b-4f1fd13880b2"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ClassB" mc="Class" uid="69f9578e-e73d-47e7-9e0f-a18e34390fdf"/>
+    <PID name="Associations_Qualified" mc="Package" uid="455b0966-7f02-43f5-938a-c28173defecd"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ClassB]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID name="someAs" mc="AssociationEnd" uid="e03669b1-2c7f-4e90-a132-6467ecebdcd3"/>
+          <PID name="ClassB" mc="Class" uid="69f9578e-e73d-47e7-9e0f-a18e34390fdf"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[someAs]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="ClassA" mc="Class" uid="9f65d34d-cdd1-4dca-b96b-4f1fd13880b2"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="thisB" mc="AssociationEnd" uid="53b18bff-888b-4000-a245-4ec764df0e03"/>
+                <PID name="ClassB" mc="Class" uid="69f9578e-e73d-47e7-9e0f-a18e34390fdf"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"><![CDATA[thisB]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <ID name="ClassB" mc="Class" uid="69f9578e-e73d-47e7-9e0f-a18e34390fdf"/>
+                  </LINK>
+                  <COMP relation="Qualifier">
+                    <OBJECT>
+                      <ID name="a1" mc="Attribute" uid="c56b4dc1-e570-4a67-ae2d-bfe0b70171fa"/>
+                      <PID name="ClassB" mc="Class" uid="69f9578e-e73d-47e7-9e0f-a18e34390fdf"/>
+                      <ATTRIBUTES>
+                        <ATT name="TypeConstraint"></ATT>
+                        <ATT name="Value"></ATT>
+                        <ATT name="TargetIsClass">false</ATT>
+                        <ATT name="Changeable">ReadWrite</ATT>
+                        <ATT name="IsDerived">false</ATT>
+                        <ATT name="IsOrdered">false</ATT>
+                        <ATT name="IsUnique">false</ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="Visibility">Public</ATT>
+                        <ATT name="IsClass">false</ATT>
+                        <ATT name="IsAbstract">false</ATT>
+                        <ATT name="Name"><![CDATA[a1]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Type">
+                          <FOREIGNID name="string" mc="DataType" uid="00000004-0000-000d-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="a2" mc="Attribute" uid="e29f7850-5732-4fb1-a785-fa34ef3ba9fc"/>
+                      <PID name="ClassB" mc="Class" uid="69f9578e-e73d-47e7-9e0f-a18e34390fdf"/>
+                      <ATTRIBUTES>
+                        <ATT name="TypeConstraint"></ATT>
+                        <ATT name="Value"></ATT>
+                        <ATT name="TargetIsClass">false</ATT>
+                        <ATT name="Changeable">ReadWrite</ATT>
+                        <ATT name="IsDerived">false</ATT>
+                        <ATT name="IsOrdered">false</ATT>
+                        <ATT name="IsUnique">false</ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="Visibility">Public</ATT>
+                        <ATT name="IsClass">false</ATT>
+                        <ATT name="IsAbstract">false</ATT>
+                        <ATT name="Name"><![CDATA[a2]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Type">
+                          <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Opposite">
+                    <COMPID name="someAs" mc="AssociationEnd" uid="e03669b1-2c7f-4e90-a132-6467ecebdcd3"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="R" mc="Association" uid="8a9506ff-3665-47ac-933b-4e571f610bb1"/>
+                      <PID name="ClassB" mc="Class" uid="69f9578e-e73d-47e7-9e0f-a18e34390fdf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"><![CDATA[R]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <COMPID name="R" mc="Association" uid="8a9506ff-3665-47ac-933b-4e571f610bb1"/>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

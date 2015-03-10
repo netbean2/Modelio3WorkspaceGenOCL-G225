@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ClassModels" version="3">
+  <DEPS>
+    <ID name="ClassModels" mc="Package" uid="473c4ae8-a95a-46c5-a3c7-6571ed501e18"/>
+    <COMPID name="Associations_Aggregation" mc="Package" uid="a61a89f9-49f3-40e8-a694-e1c9fa85e66b"/>
+    <COMPID name="Associations_Class" mc="Package" uid="2522897c-144c-4f90-abe9-8b7277950484"/>
+    <COMPID name="Associations_Composition" mc="Package" uid="18b20c67-eb80-4901-8050-4799a96723e6"/>
+    <COMPID name="Associations_NAry" mc="Package" uid="b1e0993d-9681-42e0-8bed-faaf66aaec67"/>
+    <COMPID name="Associations_Ordered" mc="Package" uid="421f14b5-27d4-4064-aece-161c3935d472"/>
+    <COMPID name="Associations_Qualified" mc="Package" uid="455b0966-7f02-43f5-938a-c28173defecd"/>
+    <COMPID name="Associations_Simple" mc="Package" uid="eb96a148-a8d6-498c-a44a-faf4205040d9"/>
+    <COMPID name="Associations_Unspecified" mc="Package" uid="67517491-b752-4fab-9a76-0b77d006b144"/>
+    <COMPID name="Attributes_Cardinality" mc="Package" uid="cd5f6a47-4b58-4948-90e2-abac32728a16"/>
+    <COMPID name="Attributes_Enumerations" mc="Package" uid="a329b88b-4b85-4350-a871-8fe4183ac09d"/>
+    <COMPID name="Attributes_Simple" mc="Package" uid="bd87b4e0-4f19-4890-bd18-c2e81e36015f"/>
+    <COMPID name="Attributes_Visibility" mc="Package" uid="1dda6d54-30ac-40a3-a266-344d8d474375"/>
+    <COMPID name="Classes" mc="Package" uid="8066bc59-15fc-43c2-9365-eecf0cd4a148"/>
+    <COMPID name="Inheritance_Multiple" mc="Package" uid="daabbc73-152f-480f-8dce-7a0516e6c27a"/>
+    <COMPID name="Inheritance_Single" mc="Package" uid="22433abe-a7de-4c8e-aacc-75055f33dc34"/>
+    <COMPID name="Notes" mc="Package" uid="0f7662e8-1dbc-4ed4-bbe1-52290b11b13e"/>
+    <COMPID name="Operations" mc="Package" uid="0bfd2353-7481-4b97-beda-95bfe44f09c3"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ClassModels" mc="Package" uid="473c4ae8-a95a-46c5-a3c7-6571ed501e18"/>
+    <PID name="UmlTestCases" mc="Package" uid="6833c9ba-2b95-42d1-b9e3-660a5df680ed"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ClassModels]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Classes" mc="Package" uid="8066bc59-15fc-43c2-9365-eecf0cd4a148"/>
+        <COMPID name="Attributes_Simple" mc="Package" uid="bd87b4e0-4f19-4890-bd18-c2e81e36015f"/>
+        <COMPID name="Attributes_Visibility" mc="Package" uid="1dda6d54-30ac-40a3-a266-344d8d474375"/>
+        <COMPID name="Attributes_Cardinality" mc="Package" uid="cd5f6a47-4b58-4948-90e2-abac32728a16"/>
+        <COMPID name="Attributes_Enumerations" mc="Package" uid="a329b88b-4b85-4350-a871-8fe4183ac09d"/>
+        <COMPID name="Operations" mc="Package" uid="0bfd2353-7481-4b97-beda-95bfe44f09c3"/>
+        <COMPID name="Inheritance_Single" mc="Package" uid="22433abe-a7de-4c8e-aacc-75055f33dc34"/>
+        <COMPID name="Inheritance_Multiple" mc="Package" uid="daabbc73-152f-480f-8dce-7a0516e6c27a"/>
+        <COMPID name="Associations_Simple" mc="Package" uid="eb96a148-a8d6-498c-a44a-faf4205040d9"/>
+        <COMPID name="Associations_Unspecified" mc="Package" uid="67517491-b752-4fab-9a76-0b77d006b144"/>
+        <COMPID name="Associations_Ordered" mc="Package" uid="421f14b5-27d4-4064-aece-161c3935d472"/>
+        <COMPID name="Associations_Composition" mc="Package" uid="18b20c67-eb80-4901-8050-4799a96723e6"/>
+        <COMPID name="Associations_Aggregation" mc="Package" uid="a61a89f9-49f3-40e8-a694-e1c9fa85e66b"/>
+        <COMPID name="Associations_Class" mc="Package" uid="2522897c-144c-4f90-abe9-8b7277950484"/>
+        <COMPID name="Associations_Qualified" mc="Package" uid="455b0966-7f02-43f5-938a-c28173defecd"/>
+        <COMPID name="Associations_NAry" mc="Package" uid="b1e0993d-9681-42e0-8bed-faaf66aaec67"/>
+        <COMPID name="Notes" mc="Package" uid="0f7662e8-1dbc-4ed4-bbe1-52290b11b13e"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

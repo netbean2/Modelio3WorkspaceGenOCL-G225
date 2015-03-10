@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="UMLTestCases" version="3">
+  <DEPS>
+    <ID name="UMLTestCases" mc="AnalystProject" uid="2f856d78-d84b-44a4-b0eb-8a89ea757ff2"/>
+    <COMPID name="UMLTestCases" mc="PropertyContainer" uid="e099787c-fdde-438a-9ccf-47ef2752eb0c"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="UMLTestCases" mc="AnalystProject" uid="2f856d78-d84b-44a4-b0eb-8a89ea757ff2"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[UMLTestCases]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="PropertyRoot">
+        <COMPID name="UMLTestCases" mc="PropertyContainer" uid="e099787c-fdde-438a-9ccf-47ef2752eb0c"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="noEmptyRentedBedrooms" version="3">
+  <DEPS>
+    <ID name="noEmptyRentedBedrooms" mc="Signal" uid="7e064235-951e-47a5-8945-d99497deefa8"/>
+    <FOREIGNID name="Invariant" mc="Stereotype" uid="efef56fa-fa3d-4341-890a-d02000539ad6"/>
+    <FOREIGNID name="comment" mc="NoteType" uid="00000000-0000-3e80-0000-000000000000"/>
+    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+    <FOREIGNID name="oclInvariant" mc="NoteType" uid="9a7ef443-6a91-4bc5-bf57-245dc448b8e0"/>
+    <FOREIGNID name="summary" mc="NoteType" uid="00000000-0000-3e84-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="noEmptyRentedBedrooms" mc="Signal" uid="7e064235-951e-47a5-8945-d99497deefa8"/>
+    <PID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+    <ATTRIBUTES>
+      <ATT name="IsEvent">false</ATT>
+      <ATT name="IsException">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[noEmptyRentedBedrooms]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="Invariant" mc="Stereotype" uid="efef56fa-fa3d-4341-890a-d02000539ad6"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="0f680466-0351-4775-946a-d08a8809c9ec"/>
+          <PID name="noEmptyRentedBedrooms" mc="Signal" uid="7e064235-951e-47a5-8945-d99497deefa8"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Rented bedrooms not empty.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="summary" mc="NoteType" uid="00000000-0000-3e84-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="d21f706f-4310-4314-95d8-d1bfca34bfed"/>
+          <PID name="noEmptyRentedBedrooms" mc="Signal" uid="7e064235-951e-47a5-8945-d99497deefa8"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[All rented bedrooms are occupied by at least one occupant.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="4c504d42-52ab-4a8c-a1d8-1bb6ccc388ba"/>
+          <PID name="noEmptyRentedBedrooms" mc="Signal" uid="7e064235-951e-47a5-8945-d99497deefa8"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="oclInvariant" mc="NoteType" uid="9a7ef443-6a91-4bc5-bf57-245dc448b8e0"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="415e70ea-7021-494e-b5e1-1aa7f0ca19da"/>
+          <PID name="noEmptyRentedBedrooms" mc="Signal" uid="7e064235-951e-47a5-8945-d99497deefa8"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Easy. Use 'implies']]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="comment" mc="NoteType" uid="00000000-0000-3e80-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

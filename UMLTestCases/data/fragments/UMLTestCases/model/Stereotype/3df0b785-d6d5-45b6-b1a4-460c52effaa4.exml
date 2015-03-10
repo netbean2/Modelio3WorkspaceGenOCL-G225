@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Precondition" version="3">
+  <DEPS>
+    <ID name="Precondition" mc="Stereotype" uid="3df0b785-d6d5-45b6-b1a4-460c52effaa4"/>
+    <EXTID name="Constraint" mc="Stereotype" uid="8e65b5e3-5b53-4a7e-a890-7b6bce95f51a"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Precondition" mc="Stereotype" uid="3df0b785-d6d5-45b6-b1a4-460c52effaa4"/>
+    <PID name="LocalProfile" mc="Profile" uid="4e5faada-d80c-4152-96cc-fd063b797783"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[Precondition]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Note]]></ATT>
+      <ATT name="Name"><![CDATA[Precondition]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Parent">
+        <ID name="Constraint" mc="Stereotype" uid="8e65b5e3-5b53-4a7e-a890-7b6bce95f51a"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

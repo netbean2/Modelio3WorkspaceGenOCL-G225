@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Table" version="3">
+  <DEPS>
+    <ID name="Table" mc="Stereotype" uid="47b94eee-55f3-4d8f-85ef-9d1f1db53b96"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Table" mc="Stereotype" uid="47b94eee-55f3-4d8f-85ef-9d1f1db53b96"/>
+    <PID name="RelationalProfile" mc="Profile" uid="027a4693-1280-4e13-8a75-e74a39a146a3"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[Table]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Class]]></ATT>
+      <ATT name="Name"><![CDATA[Table]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

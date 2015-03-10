@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Constraint" version="3">
+  <DEPS>
+    <ID name="Constraint" mc="Stereotype" uid="39cc7eaa-00b1-4783-9f07-d89ba7e68a4d"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Constraint" mc="Stereotype" uid="39cc7eaa-00b1-4783-9f07-d89ba7e68a4d"/>
+    <PID name="OclProfile" mc="Profile" uid="41d47382-8c45-4efb-a665-d01daf0b9c8a"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"><![CDATA[Constraint.png]]></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[Constraint]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[ModelElement]]></ATT>
+      <ATT name="Name"><![CDATA[Constraint]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

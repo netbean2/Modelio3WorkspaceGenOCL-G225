@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Attributes_Cardinality Class diagram" version="3">
+  <DEPS>
+    <ID name="Attributes_Cardinality Class diagram" mc="ClassDiagram" uid="6ac191ee-a356-41a3-99ea-8976461ce55d"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Attributes_Cardinality Class diagram" mc="ClassDiagram" uid="6ac191ee-a356-41a3-99ea-8976461ce55d"/>
+    <PID name="Attributes_Cardinality" mc="Package" uid="cd5f6a47-4b58-4948-90e2-abac32728a16"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">848</ATT>
+      <ATT name="UiData"><![CDATA[eJztm21T4joUx79Kh/etfS4dXXcQdrzMsuqI15l73zBpc8CsoXWSsIqf/qaFcrUillILu9MZX9BITpLm9z8557ScfH2aUuUXME7i6EvL0PSW8vX05DL4CaFQCJZNLUXMH+BLK2YTbRpjoCTWMEEThqYaYCJipnGBBLnXgMIUIsEX12H2pfPpML3uLa5byhT9jNloNajeOj25YvEDMDFXIjSVY1E0j2eihwSS/7tFdAbLSUQzSltHpydHWYc3XYdiTqH1agnmpiXw5PtcC2MG2qJvgfl1EQ8RBpwN9u1JXMO44CgX0sSypwJPohf05RzTj8kHDGM0oyK3yKPFcjYtnAFFArCcR+6e/UialF9Ji5w5RZwvd0JxUWj4BoCKLMdVbQNZqu8DUtu+59quEYLj4M13W1oT36P4MRqgAGhu4KFgJJq0TjtCfghmAvioixgmEaJEWkinoizv0MlR2nPjAmMK/agbTx9iToTcmneGK2Cqe0coZpBYGBAuXtFilQA+pOj5WYKeLmknwK/lNFA0SdhY7pitH8s/07SODd3amn3709lPwF+obOPcuoPOcDjq3NyMzq8v/7667Q/7Z4NvudWfxXKPUbRau2Az+FQlKK6Nfc9pGyoYVqjatmeoPrZ0FRt6YIIPrmu6FUggHaxzOJA7u0J+xcgUsfmF7Fox7/pxedrdorRLU0/znZG3GzbXGfyBSJSAsSOjXglGE6v8AYVwB3LDmKT1Imv5K22pP/po1+aB8zA0OKYGFxtfwCC/ix9HJHxjKH8qjRHl+WNpnal7mD/GDFdgTaDwfsQFMIi3PzHXTY2u2YDtTaGAC4ZCUWKFKzZfKMUvdyhxTsYk1Xp3dXENnDyjgMI5i2cP9Yve0Os9iRrpf0aUZJRJflGW7UwS9CSVq/Rndxb7kTSbHGLL3VGN7cksnA1XQ6ZUQoPmpqQ4pWJXUMskrStQXzK6B1dZOEWtCMh8oloZkKubqDg4BNu1fNV0fFO1LT1Q24Hpq8HYxW19DG1vnM8dykApd3DpEXSjXq/5J4RKRedWMlZaF+EYZfLuQ9Fpzcl1HTqVyjQ9pHsq1l2k2m2kq4EFtuq38Vj3HM8z7Q+KEFvqtBPNG6H+DkItU3w4FKEWrjj8PkINAt13vLanBqHTVm3QLdUPDVtFjjN2ETY8z0bVHqh2o9ND1enRIv79SMJlygmJQZTsZJa8XWYNeyokmDUXEpp07Z2aNoi7GJfO1Yoha5apNxDpsFgkpSclE4oZS06f/rJtmLXtAdymznAQ4GYo7FhhMMtUGAqhuS/HWnPZwfy0KKlWPisk87OdaZlcuxCx/8bRPhxqzfn3HwJs5Q412f2KqS0IdJmclEQRsPQhWUqyvNj9HaUKnkKYdeeoTXTwTnQQFXo0vjE0KJNovcPlnoIBq+YsS+Lf4Fh/SGCVy6/Wkgp8P2GAVXNe1aB6CGHA23/lxiH8Vl6REFVbWMuN8vblT23J1AchQv4pylp1lkoxp2gCq7f+0spiItOkNXnzb5i0LrioMuL54OHtOtnWnG42r6auNTiUK6SUiCLSbUrylZTkP3QqAxLd8w3+Mff1s0mPoUe5mwM0l5J8rbLNOX/mNPDCANdoYkL6i1cW6znSt+u1lx/3kDyrmYp659qg88+369FZp/s9+TnHRa/qo/BdKy+36n9qXjKwsU7SMFA1AzeXV7XFQf8BlKbQRA==]]></ATT>
+      <ATT name="PdeProperties"></ATT>
+      <ATT name="Name"><![CDATA[Attributes_Cardinality Class diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

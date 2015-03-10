@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Attributes_Enumerations Class diagram" version="3">
+  <DEPS>
+    <ID name="Attributes_Enumerations Class diagram" mc="ClassDiagram" uid="d0cfa5e8-e655-4449-8de0-4d3f828ae2c9"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Attributes_Enumerations Class diagram" mc="ClassDiagram" uid="d0cfa5e8-e655-4449-8de0-4d3f828ae2c9"/>
+    <PID name="Attributes_Enumerations" mc="Package" uid="a329b88b-4b85-4350-a871-8fe4183ac09d"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">769</ATT>
+      <ATT name="UiData"><![CDATA[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]]></ATT>
+      <ATT name="PdeProperties"></ATT>
+      <ATT name="Name"><![CDATA[Attributes_Enumerations Class diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

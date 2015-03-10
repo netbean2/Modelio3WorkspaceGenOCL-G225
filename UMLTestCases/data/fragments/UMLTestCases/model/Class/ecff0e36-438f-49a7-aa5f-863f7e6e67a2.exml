@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ClassA" version="3">
+  <DEPS>
+    <ID name="ClassA" mc="Class" uid="ecff0e36-438f-49a7-aa5f-863f7e6e67a2"/>
+    <EXTID name="Attributes_Enumerations" mc="Package" uid="a329b88b-4b85-4350-a871-8fe4183ac09d"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ClassA" mc="Class" uid="ecff0e36-438f-49a7-aa5f-863f7e6e67a2"/>
+    <PID name="Attributes_Enumerations" mc="Package" uid="a329b88b-4b85-4350-a871-8fe4183ac09d"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ClassA]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="attEnumeration" mc="Attribute" uid="62ecec9d-bbc9-47da-8535-9795c72b61bb"/>
+          <PID name="ClassA" mc="Class" uid="ecff0e36-438f-49a7-aa5f-863f7e6e67a2"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[attEnumeration]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <REFOBJ>
+                <ID name="EnumerationE" mc="Enumeration" uid="d01e8ec5-95f2-47c9-a473-6ee817255fe1"/>
+                <PID name="Attributes_Enumerations" mc="Package" uid="a329b88b-4b85-4350-a871-8fe4183ac09d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

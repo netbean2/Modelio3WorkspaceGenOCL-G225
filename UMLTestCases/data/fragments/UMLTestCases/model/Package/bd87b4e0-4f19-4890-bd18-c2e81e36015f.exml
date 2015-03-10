@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Attributes_Simple" version="3">
+  <DEPS>
+    <ID name="Attributes_Simple" mc="Package" uid="bd87b4e0-4f19-4890-bd18-c2e81e36015f"/>
+    <COMPID name="Attributes_Simple Class diagram" mc="ClassDiagram" uid="8f7acb51-9e07-44aa-a2ba-8f894387801f"/>
+    <COMPID name="ClassA" mc="Class" uid="448bcada-c467-40da-a32d-077b53074485"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Attributes_Simple" mc="Package" uid="bd87b4e0-4f19-4890-bd18-c2e81e36015f"/>
+    <PID name="ClassModels" mc="Package" uid="473c4ae8-a95a-46c5-a3c7-6571ed501e18"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Attributes_Simple]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="ClassA" mc="Class" uid="448bcada-c467-40da-a32d-077b53074485"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Attributes_Simple Class diagram" mc="ClassDiagram" uid="8f7acb51-9e07-44aa-a2ba-8f894387801f"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

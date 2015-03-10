@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Inheritance_Multiple" version="3">
+  <DEPS>
+    <ID name="Inheritance_Multiple" mc="Package" uid="daabbc73-152f-480f-8dce-7a0516e6c27a"/>
+    <COMPID name="ClassA" mc="Class" uid="0bb90095-d926-404a-97f1-3ea5e2f866c9"/>
+    <COMPID name="ClassB" mc="Class" uid="4e76a970-0906-46e0-971b-aa57685c3b35"/>
+    <COMPID name="ClassC" mc="Class" uid="35c7ff42-1af8-4012-a668-110812d29291"/>
+    <COMPID name="Inheritance_Multiple Class diagram" mc="ClassDiagram" uid="62d84992-5cdf-4235-a3a9-d48b5cd64c36"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Inheritance_Multiple" mc="Package" uid="daabbc73-152f-480f-8dce-7a0516e6c27a"/>
+    <PID name="ClassModels" mc="Package" uid="473c4ae8-a95a-46c5-a3c7-6571ed501e18"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Inheritance_Multiple]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="ClassA" mc="Class" uid="0bb90095-d926-404a-97f1-3ea5e2f866c9"/>
+        <COMPID name="ClassB" mc="Class" uid="4e76a970-0906-46e0-971b-aa57685c3b35"/>
+        <COMPID name="ClassC" mc="Class" uid="35c7ff42-1af8-4012-a668-110812d29291"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Inheritance_Multiple Class diagram" mc="ClassDiagram" uid="62d84992-5cdf-4235-a3a9-d48b5cd64c36"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="deriveIsOnTheLanding" version="3">
+  <DEPS>
+    <ID name="deriveIsOnTheLanding" mc="Signal" uid="0ccbfbbe-fd6f-4897-aec4-bafd7d3cf386"/>
+    <EXTID name="Bathroom" mc="Class" uid="dbdff9c4-5000-4f18-9797-a8ac2b9edcde"/>
+    <FOREIGNID name="AttributeDefinition" mc="Stereotype" uid="c94cd276-eab4-4494-8d61-fe6c6d7d9231"/>
+    <FOREIGNID name="comment" mc="NoteType" uid="00000000-0000-3e80-0000-000000000000"/>
+    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+    <FOREIGNID name="oclDefinition" mc="NoteType" uid="71b316ca-2ef8-456a-80cf-362dad4e339e"/>
+    <FOREIGNID name="summary" mc="NoteType" uid="00000000-0000-3e84-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="deriveIsOnTheLanding" mc="Signal" uid="0ccbfbbe-fd6f-4897-aec4-bafd7d3cf386"/>
+    <PID name="Bathroom" mc="Class" uid="dbdff9c4-5000-4f18-9797-a8ac2b9edcde"/>
+    <ATTRIBUTES>
+      <ATT name="IsEvent">false</ATT>
+      <ATT name="IsException">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[deriveIsOnTheLanding]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="AttributeDefinition" mc="Stereotype" uid="c94cd276-eab4-4494-8d61-fe6c6d7d9231"/>
+      </LINK>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Dependency" uid="9dafdca5-29e8-45f2-ace2-2a3fecc2c653"/>
+          <PID name="deriveIsOnTheLanding" mc="Signal" uid="0ccbfbbe-fd6f-4897-aec4-bafd7d3cf386"/>
+          <ATTRIBUTES>
+            <ATT name="DependsOnId"></ATT>
+            <ATT name="DependsOnName"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <REFOBJ>
+                <ID name="isOnTheLanding" mc="Attribute" uid="fb723903-2d71-4f6b-bc62-c30118816ff2"/>
+                <PID name="Bathroom" mc="Class" uid="dbdff9c4-5000-4f18-9797-a8ac2b9edcde"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="4d57edc2-f1a9-403c-8dab-23505845c866"/>
+          <PID name="deriveIsOnTheLanding" mc="Signal" uid="0ccbfbbe-fd6f-4897-aec4-bafd7d3cf386"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Derivation of isOnTheLanding attribute.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="summary" mc="NoteType" uid="00000000-0000-3e84-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="26b9ec0b-73da-4d21-b3f0-8b0d9ac18759"/>
+          <PID name="deriveIsOnTheLanding" mc="Signal" uid="0ccbfbbe-fd6f-4897-aec4-bafd7d3cf386"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[A bathroom is said to be on the landing if it is not in a bedroom.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="dd4fa6fe-2d22-45af-97d2-b4f68ebdd744"/>
+          <PID name="deriveIsOnTheLanding" mc="Signal" uid="0ccbfbbe-fd6f-4897-aec4-bafd7d3cf386"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[self.bedroom->isEmpty()]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="oclDefinition" mc="NoteType" uid="71b316ca-2ef8-456a-80cf-362dad4e339e"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="7b24e5af-c975-407b-8699-5a706c0f56e0"/>
+          <PID name="deriveIsOnTheLanding" mc="Signal" uid="0ccbfbbe-fd6f-4897-aec4-bafd7d3cf386"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Easy]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="comment" mc="NoteType" uid="00000000-0000-3e80-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

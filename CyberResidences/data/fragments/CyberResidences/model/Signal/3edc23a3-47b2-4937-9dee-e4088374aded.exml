@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="deriveFloor" version="3">
+  <DEPS>
+    <ID name="deriveFloor" mc="Signal" uid="3edc23a3-47b2-4937-9dee-e4088374aded"/>
+    <EXTID name="Room" mc="Class" uid="332d61c8-6d3b-4384-84d1-5436f8489b86"/>
+    <FOREIGNID name="AttributeDefinition" mc="Stereotype" uid="c94cd276-eab4-4494-8d61-fe6c6d7d9231"/>
+    <FOREIGNID name="comment" mc="NoteType" uid="00000000-0000-3e80-0000-000000000000"/>
+    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+    <FOREIGNID name="oclDefinition" mc="NoteType" uid="71b316ca-2ef8-456a-80cf-362dad4e339e"/>
+    <FOREIGNID name="summary" mc="NoteType" uid="00000000-0000-3e84-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="deriveFloor" mc="Signal" uid="3edc23a3-47b2-4937-9dee-e4088374aded"/>
+    <PID name="Room" mc="Class" uid="332d61c8-6d3b-4384-84d1-5436f8489b86"/>
+    <ATTRIBUTES>
+      <ATT name="IsEvent">false</ATT>
+      <ATT name="IsException">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[deriveFloor]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="AttributeDefinition" mc="Stereotype" uid="c94cd276-eab4-4494-8d61-fe6c6d7d9231"/>
+      </LINK>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Dependency" uid="4c0dde6f-c8d2-4979-8c48-de41d91a2e41"/>
+          <PID name="deriveFloor" mc="Signal" uid="3edc23a3-47b2-4937-9dee-e4088374aded"/>
+          <ATTRIBUTES>
+            <ATT name="DependsOnId"></ATT>
+            <ATT name="DependsOnName"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <REFOBJ>
+                <ID name="floor" mc="Attribute" uid="fdd736d8-25ba-48dc-a572-88b026e5bef6"/>
+                <PID name="Room" mc="Class" uid="332d61c8-6d3b-4384-84d1-5436f8489b86"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="9101da36-c60f-47df-a125-71b5e40cd54b"/>
+          <PID name="deriveFloor" mc="Signal" uid="3edc23a3-47b2-4937-9dee-e4088374aded"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Derivation of the attribute floor.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="summary" mc="NoteType" uid="00000000-0000-3e84-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="eeea227d-9747-4b0f-b5e2-d0407db16296"/>
+          <PID name="deriveFloor" mc="Signal" uid="3edc23a3-47b2-4937-9dee-e4088374aded"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[The floor number correspond to the first digits of the room number, where the last two digits are removed. For instance the room 634 is at the floor 6.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="ce96ab86-569a-43b7-ab4b-4bdb36b5c65f"/>
+          <PID name="deriveFloor" mc="Signal" uid="3edc23a3-47b2-4937-9dee-e4088374aded"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[number div 100]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="oclDefinition" mc="NoteType" uid="71b316ca-2ef8-456a-80cf-362dad4e339e"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="ef5dea03-038f-46fa-b478-13bdb8975437"/>
+          <PID name="deriveFloor" mc="Signal" uid="3edc23a3-47b2-4937-9dee-e4088374aded"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Easy]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="comment" mc="NoteType" uid="00000000-0000-3e80-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

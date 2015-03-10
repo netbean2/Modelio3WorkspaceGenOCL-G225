@@ -1,0 +1,129 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Rent" version="3">
+  <DEPS>
+    <ID name="Rent" mc="Class" uid="1fd2cbde-aa65-4c7a-88af-f4c8f8eeb843"/>
+    <COMPID name="aboooConditions" mc="Signal" uid="50cac830-9b64-4905-9901-5453ea1397d2"/>
+    <COMPID name="cumulatedDiscounts" mc="Signal" uid="1d5f22b3-d338-488c-9097-3996b40b0bf1"/>
+    <COMPID name="deriveDiscount" mc="Signal" uid="e558165a-4c7d-4d70-9d99-eed5e6885496"/>
+    <COMPID name="deriveRate" mc="Signal" uid="8fa9d246-2a09-4083-b93f-4f3186f2b8b9"/>
+    <COMPID name="labelUnique" mc="Signal" uid="0f11e863-6767-48d5-b987-20a751612d96"/>
+    <COMPID name="sboooConditions" mc="Signal" uid="cbab7e33-f896-4748-bf5f-443be2e3ead0"/>
+    <EXTID name="Discount" mc="Class" uid="7efd39a0-e33a-4ba8-afd9-0f3b519dfa60"/>
+    <FOREIGNID name="float" mc="DataType" uid="00000004-0000-000b-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Rent" mc="Class" uid="1fd2cbde-aa65-4c7a-88af-f4c8f8eeb843"/>
+    <PID name="Rates" mc="Package" uid="0e8266dd-dfc9-4238-a1b4-7500d4e25302"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Rent]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="discount" mc="Attribute" uid="b3cb8063-03ec-41d7-885b-f91c9d9df33f"/>
+          <PID name="Rent" mc="Class" uid="1fd2cbde-aa65-4c7a-88af-f4c8f8eeb843"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">true</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[discount]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="float" mc="DataType" uid="00000004-0000-000b-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="rate" mc="Attribute" uid="d0e5c1a8-7092-40ea-9211-dbaf648b018d"/>
+          <PID name="Rent" mc="Class" uid="1fd2cbde-aa65-4c7a-88af-f4c8f8eeb843"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">true</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[rate]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="float" mc="DataType" uid="00000004-0000-000b-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID name="discounts" mc="AssociationEnd" uid="f3f6f760-e235-497d-b9e1-b33e7fc37f79"/>
+          <PID name="Rent" mc="Class" uid="1fd2cbde-aa65-4c7a-88af-f4c8f8eeb843"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsComposition</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[discounts]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Discount" mc="Class" uid="7efd39a0-e33a-4ba8-afd9-0f3b519dfa60"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <REFOBJ>
+                <ID name="rent" mc="AssociationEnd" uid="0b6facfd-7781-402d-a9b1-3fdca5eaea4f"/>
+                <PID name="Discount" mc="Class" uid="7efd39a0-e33a-4ba8-afd9-0f3b519dfa60"/>
+              </REFOBJ>
+            </COMP>
+            <COMP relation="Association">
+              <REFOBJ>
+                <ID name="HasDiscounts" mc="Association" uid="b85c1398-b3bd-4472-b60a-3711f583dc03"/>
+                <PID name="Discount" mc="Class" uid="7efd39a0-e33a-4ba8-afd9-0f3b519dfa60"/>
+              </REFOBJ>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="deriveDiscount" mc="Signal" uid="e558165a-4c7d-4d70-9d99-eed5e6885496"/>
+        <COMPID name="deriveRate" mc="Signal" uid="8fa9d246-2a09-4083-b93f-4f3186f2b8b9"/>
+        <COMPID name="cumulatedDiscounts" mc="Signal" uid="1d5f22b3-d338-488c-9097-3996b40b0bf1"/>
+        <COMPID name="labelUnique" mc="Signal" uid="0f11e863-6767-48d5-b987-20a751612d96"/>
+        <COMPID name="sboooConditions" mc="Signal" uid="cbab7e33-f896-4748-bf5f-443be2e3ead0"/>
+        <COMPID name="aboooConditions" mc="Signal" uid="50cac830-9b64-4905-9901-5453ea1397d2"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

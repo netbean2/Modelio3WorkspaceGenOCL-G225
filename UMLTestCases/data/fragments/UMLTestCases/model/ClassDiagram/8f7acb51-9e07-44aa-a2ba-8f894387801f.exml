@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Attributes_Simple Class diagram" version="3">
+  <DEPS>
+    <ID name="Attributes_Simple Class diagram" mc="ClassDiagram" uid="8f7acb51-9e07-44aa-a2ba-8f894387801f"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Attributes_Simple Class diagram" mc="ClassDiagram" uid="8f7acb51-9e07-44aa-a2ba-8f894387801f"/>
+    <PID name="Attributes_Simple" mc="Package" uid="bd87b4e0-4f19-4890-bd18-c2e81e36015f"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">790</ATT>
+      <ATT name="UiData"><![CDATA[eJztm21zojoUx78K43ssjwLTbnes9vY6ax+m9nZm941zgGCzjeAkcVv76TegeFtqLSJF22HGFxDISUJ+/+ScAx59fxwT6Q+iDEfht4baVBrS9+OjS/c38riEfVHUkPhsgr41IjpqjiMfERw1fQwjCuMm8jGPaJNx4Pi+iQgao5Cz+bmX3nQ2HiTn3fl5QxrD74gOl40qjeOjKxpNEOUzKYSxaIvALJryLnAQ126BTNGiE+GUkMbB8dFBWuFV1QGfEdR4MQRt3RBYfD9rehFFzXndHP3rAPPAR37a2Okjv0ZBzlYuhIlFTQk98q7bE31MDuMDHwUwJTwzyIP5cNYNnCICHPmiH5lndh4XSX/iEtFzAowtZkKyAws811RlBymWbBgAMmguyHZgO4ZuW7aiBuuftrDGf4TRQ9gHF5FMwwNOcThqHLe5OHCnHLHhAI8nBElJL6TFwzk6SCqtHVtEUC/sRONJxDAXs/JGSzlMde4w8SmKLfQx4y9A0Quw7hF4ehKMJ0Paiu1r0Q0IRzEWi8nSlEPxUy3rUNW0jbE3Phz7mPm5wNb2rdNvDwbD9s3N8Oz68r+r296gd9I/zYz+JBJzDOFy7JxO0YeKQDIM2xXDAdkzWoJ+RRyBrvmyYlmuqSuWuG6WQH/SWHt/IDe3hfyK4jHQ2YWoWjLvymFx2lt5aRemHmdbI2/UbK4yeA44jMHYklGrAKOxVTYBD90hMWFU0HqRlvyblFTveNiVrcCtGsdVBucTn8Mgu4sehth7ZSi7KwVAWHZbWmXqHs0eIuqXYI2Ddz9kHFEUbb5jruoaWTEBm5sCl3EKHi8wwiWbz5TiFNuUGMMBTrTeWZ5cI4afwCXojEbTSfWiV5Vqd6Ja+h/hJalF4l5IA51RjJ6gchn5bM9iLxRm401sMTuqpm+OZu5IuBw0hRRqNtcFxAkW25JaJGpdkvoc0h2slblj1JKAzMYVpQG5fIgSuJrTMsGUgyBwZMMUZNpuK5AVTVUV2wRNb2VlUQRKMYPzw2rXzK/gKOXtW0FPaZV/oxaJuvdFpBWH1lWINNA8T/fAlfVAEzuHphqyrbdU2XAdRzEVG/wWlCPSxb5dq/QzqLRI3mFfVJo72fB5VIpAU1zTtGRVV3zZaBmKDIGhybapu0bLUU0XWeWodAFMrdLPoNIiyYI9UalWcXKgCpUabuBZvmPISHM04fCqtgyu5cueAi3PcE3fsZ1yVPoPiYDXGt1XjR7MY9N35KsVyazEBiGeyTSzcpkW7CjLp9WplL1IpZwjfhf5hfMoOZEtkmLBwvGnoZCekIzHpzTeeXqLskFatgNwq0651OCuNJiisGX2TyuSWMiF5q4W1oqzDdrXeJNfIpkfvZgWCbJzEfsrCnexoFYceH8RYEtfUOPZL5nanEAXiUdxGCKavMFOSBYn239AmH1FaG3+hlCvOj6tvYM3vIMwV8547desRQKtN7jckTOgVxxl6TWOu3AJ9GLx1UpSEduNG6BXHFfVqO6DG/D6UqYdzG7FGfag3MRappXXX2Y3F0y94yJkPYSV6iwUYo5hhJaf5CaZxVimcWn8We4gLp1zUabHk3WNc8i2/m58H1Q7ECMkBPM80q1T8qWk5N9dVPo4vGdr1sfM7SejLoUHMZt9mAlJvlTZ+pg/XTT8uQHWJLEJsV68sFjNlr5ZrZ386Q5nWU1V1D1r9ts/T6+HJ+3Oj/i/VhfdsrfCN608n6r/qXnOwNo8Sc1A2QzcXF5V5gf9BXIUGwI=]]></ATT>
+      <ATT name="PdeProperties"></ATT>
+      <ATT name="Name"><![CDATA[Attributes_Simple Class diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ClassA" version="3">
+  <DEPS>
+    <ID name="ClassA" mc="Class" uid="07ba071f-2802-4fbb-8e6f-15b16ebd10a0"/>
+    <EXTID name="ClassB" mc="Class" uid="d165ba02-e737-4043-b77a-fc821f874944"/>
+    <EXTID name="ClassC" mc="Class" uid="3880273f-ecc0-429b-aa03-b3d6e366ff6e"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ClassA" mc="Class" uid="07ba071f-2802-4fbb-8e6f-15b16ebd10a0"/>
+    <PID name="Associations_NAry" mc="Package" uid="b1e0993d-9681-42e0-8bed-faaf66aaec67"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ClassA]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedNaryEnd">
+        <OBJECT>
+          <ID name="someA" mc="NaryAssociationEnd" uid="b33d7061-2902-420c-91c8-521a51776d50"/>
+          <PID name="ClassA" mc="Class" uid="07ba071f-2802-4fbb-8e6f-15b16ebd10a0"/>
+          <ATTRIBUTES>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[someA]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="NaryAssociation">
+              <OBJECT>
+                <ID name="R" mc="NaryAssociation" uid="3ba69130-f3a6-4f15-b4de-17ca6aca66a3"/>
+                <PID name="ClassA" mc="Class" uid="07ba071f-2802-4fbb-8e6f-15b16ebd10a0"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[R]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="NaryEnd">
+                    <COMPID name="someA" mc="NaryAssociationEnd" uid="b33d7061-2902-420c-91c8-521a51776d50"/>
+                    <REFOBJ>
+                      <ID name="someB" mc="NaryAssociationEnd" uid="4275ee60-5a55-44a4-88c1-0f020363a6ba"/>
+                      <PID name="ClassB" mc="Class" uid="d165ba02-e737-4043-b77a-fc821f874944"/>
+                    </REFOBJ>
+                    <REFOBJ>
+                      <ID name="theC" mc="NaryAssociationEnd" uid="cb711e48-24d6-4901-bd91-1a25f4b2d0ce"/>
+                      <PID name="ClassC" mc="Class" uid="3880273f-ecc0-429b-aa03-b3d6e366ff6e"/>
+                    </REFOBJ>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

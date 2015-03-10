@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ConstraintDiagram" version="3">
+  <DEPS>
+    <ID name="ConstraintDiagram" mc="Stereotype" uid="5f24bf92-e9a1-454d-98aa-ebe1b4cfce4a"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ConstraintDiagram" mc="Stereotype" uid="5f24bf92-e9a1-454d-98aa-ebe1b4cfce4a"/>
+    <PID name="OclProfile" mc="Profile" uid="41d47382-8c45-4efb-a665-d01daf0b9c8a"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"><![CDATA[ConstraintDiagram.png]]></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[ConstraintDiagram]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[ClassDiagram]]></ATT>
+      <ATT name="Name"><![CDATA[ConstraintDiagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

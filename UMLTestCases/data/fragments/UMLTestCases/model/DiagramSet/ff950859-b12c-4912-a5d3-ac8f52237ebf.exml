@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="UMLTestCases" version="3">
+  <DEPS>
+    <ID name="UMLTestCases" mc="DiagramSet" uid="ff950859-b12c-4912-a5d3-ac8f52237ebf"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="UMLTestCases" mc="DiagramSet" uid="ff950859-b12c-4912-a5d3-ac8f52237ebf"/>
+    <PID name="UMLTestCases" mc="Project" uid="54af86bb-d27f-4005-b7f4-91a3b985f2e1"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[UMLTestCases]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

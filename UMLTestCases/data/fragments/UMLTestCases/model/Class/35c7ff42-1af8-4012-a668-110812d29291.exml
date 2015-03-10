@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ClassC" version="3">
+  <DEPS>
+    <ID name="ClassC" mc="Class" uid="35c7ff42-1af8-4012-a668-110812d29291"/>
+    <EXTID name="ClassA" mc="Class" uid="0bb90095-d926-404a-97f1-3ea5e2f866c9"/>
+    <EXTID name="ClassB" mc="Class" uid="4e76a970-0906-46e0-971b-aa57685c3b35"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ClassC" mc="Class" uid="35c7ff42-1af8-4012-a668-110812d29291"/>
+    <PID name="Inheritance_Multiple" mc="Package" uid="daabbc73-152f-480f-8dce-7a0516e6c27a"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ClassC]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="Generalization" mc="Generalization" uid="f3cc581f-dd44-4e50-99a6-ee2b2eb691fd"/>
+          <PID name="ClassC" mc="Class" uid="35c7ff42-1af8-4012-a668-110812d29291"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="ClassA" mc="Class" uid="0bb90095-d926-404a-97f1-3ea5e2f866c9"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Generalization" mc="Generalization" uid="99672d1f-59a9-4099-ae1e-e64b0cbea860"/>
+          <PID name="ClassC" mc="Class" uid="35c7ff42-1af8-4012-a668-110812d29291"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="ClassB" mc="Class" uid="4e76a970-0906-46e0-971b-aa57685c3b35"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

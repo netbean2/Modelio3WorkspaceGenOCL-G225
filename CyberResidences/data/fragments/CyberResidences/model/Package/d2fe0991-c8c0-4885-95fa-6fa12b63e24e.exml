@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Buildings" version="3">
+  <DEPS>
+    <ID name="Buildings" mc="Package" uid="d2fe0991-c8c0-4885-95fa-6fa12b63e24e"/>
+    <COMPID name="Bathroom" mc="Class" uid="dbdff9c4-5000-4f18-9797-a8ac2b9edcde"/>
+    <COMPID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+    <COMPID name="Buildings_Constaints" mc="ClassDiagram" uid="419d9954-c04b-4679-98b5-8c3de60cd155"/>
+    <COMPID name="Residence" mc="Class" uid="97587931-2125-4165-b797-b3d6cb2c2a92"/>
+    <COMPID name="Room" mc="Class" uid="332d61c8-6d3b-4384-84d1-5436f8489b86"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Buildings" mc="Package" uid="d2fe0991-c8c0-4885-95fa-6fa12b63e24e"/>
+    <PID name="CyberResidences" mc="Package" uid="19dd0491-2ea4-498c-a3d1-52a9a5dcaf2b"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Buildings]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Residence" mc="Class" uid="97587931-2125-4165-b797-b3d6cb2c2a92"/>
+        <COMPID name="Room" mc="Class" uid="332d61c8-6d3b-4384-84d1-5436f8489b86"/>
+        <COMPID name="Bathroom" mc="Class" uid="dbdff9c4-5000-4f18-9797-a8ac2b9edcde"/>
+        <COMPID name="Bedroom" mc="Class" uid="7416dd74-c640-42cb-a496-ff426da70727"/>
+        <OBJECT>
+          <ID name="Category" mc="Enumeration" uid="1be6d9f2-4b89-43e6-843d-8c56b7431b4b"/>
+          <PID name="Buildings" mc="Package" uid="d2fe0991-c8c0-4885-95fa-6fa12b63e24e"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[Category]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="economy" mc="EnumerationLiteral" uid="c2df0ea2-d485-4372-9c76-606008f43c1b"/>
+                <PID name="Buildings" mc="Package" uid="d2fe0991-c8c0-4885-95fa-6fa12b63e24e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[economy]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="standard" mc="EnumerationLiteral" uid="5621aca2-fd35-46ec-ac0f-00c927170588"/>
+                <PID name="Buildings" mc="Package" uid="d2fe0991-c8c0-4885-95fa-6fa12b63e24e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[standard]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="premium" mc="EnumerationLiteral" uid="7a7add3d-2886-41ca-bc6a-6e9230400f99"/>
+                <PID name="Buildings" mc="Package" uid="d2fe0991-c8c0-4885-95fa-6fa12b63e24e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[premium]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="prestige" mc="EnumerationLiteral" uid="a902d3cf-6121-453a-bbbd-f0f9324c3fe6"/>
+                <PID name="Buildings" mc="Package" uid="d2fe0991-c8c0-4885-95fa-6fa12b63e24e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[prestige]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Buildings_Constaints" mc="ClassDiagram" uid="419d9954-c04b-4679-98b5-8c3de60cd155"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

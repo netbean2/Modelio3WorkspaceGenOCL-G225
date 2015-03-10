@@ -1,0 +1,129 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Discount" version="3">
+  <DEPS>
+    <ID name="Discount" mc="Class" uid="7efd39a0-e33a-4ba8-afd9-0f3b519dfa60"/>
+    <COMPID name="aboooPercentage" mc="Signal" uid="08773cbe-ba9b-408e-bf27-b02c43d7e85d"/>
+    <COMPID name="domainPercentage" mc="Signal" uid="36b5550f-da15-43b0-8642-a830ce8b9731"/>
+    <COMPID name="sboooPercentage" mc="Signal" uid="88088125-9435-487d-9629-b6492f16f915"/>
+    <EXTID name="Rent" mc="Class" uid="1fd2cbde-aa65-4c7a-88af-f4c8f8eeb843"/>
+    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+    <FOREIGNID name="string" mc="DataType" uid="00000004-0000-000d-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Discount" mc="Class" uid="7efd39a0-e33a-4ba8-afd9-0f3b519dfa60"/>
+    <PID name="Rates" mc="Package" uid="0e8266dd-dfc9-4238-a1b4-7500d4e25302"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Discount]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="percentage" mc="Attribute" uid="4bec9382-d8d3-47d5-a4b6-940b3a3d54e7"/>
+          <PID name="Discount" mc="Class" uid="7efd39a0-e33a-4ba8-afd9-0f3b519dfa60"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[percentage]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="label" mc="Attribute" uid="b2474394-6624-4853-aea4-29635e01a624"/>
+          <PID name="Discount" mc="Class" uid="7efd39a0-e33a-4ba8-afd9-0f3b519dfa60"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[label]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID name="rent" mc="AssociationEnd" uid="0b6facfd-7781-402d-a9b1-3fdca5eaea4f"/>
+          <PID name="Discount" mc="Class" uid="7efd39a0-e33a-4ba8-afd9-0f3b519dfa60"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[rent]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Rent" mc="Class" uid="1fd2cbde-aa65-4c7a-88af-f4c8f8eeb843"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <REFOBJ>
+                <ID name="discounts" mc="AssociationEnd" uid="f3f6f760-e235-497d-b9e1-b33e7fc37f79"/>
+                <PID name="Rent" mc="Class" uid="1fd2cbde-aa65-4c7a-88af-f4c8f8eeb843"/>
+              </REFOBJ>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="HasDiscounts" mc="Association" uid="b85c1398-b3bd-4472-b60a-3711f583dc03"/>
+                <PID name="Discount" mc="Class" uid="7efd39a0-e33a-4ba8-afd9-0f3b519dfa60"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[HasDiscounts]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="domainPercentage" mc="Signal" uid="36b5550f-da15-43b0-8642-a830ce8b9731"/>
+        <COMPID name="sboooPercentage" mc="Signal" uid="88088125-9435-487d-9629-b6492f16f915"/>
+        <COMPID name="aboooPercentage" mc="Signal" uid="08773cbe-ba9b-408e-bf27-b02c43d7e85d"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

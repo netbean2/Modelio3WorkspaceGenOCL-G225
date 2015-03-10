@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="deriveDiscount" version="3">
+  <DEPS>
+    <ID name="deriveDiscount" mc="Signal" uid="e558165a-4c7d-4d70-9d99-eed5e6885496"/>
+    <EXTID name="Rent" mc="Class" uid="1fd2cbde-aa65-4c7a-88af-f4c8f8eeb843"/>
+    <FOREIGNID name="AttributeDefinition" mc="Stereotype" uid="c94cd276-eab4-4494-8d61-fe6c6d7d9231"/>
+    <FOREIGNID name="comment" mc="NoteType" uid="00000000-0000-3e80-0000-000000000000"/>
+    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+    <FOREIGNID name="oclDefinition" mc="NoteType" uid="71b316ca-2ef8-456a-80cf-362dad4e339e"/>
+    <FOREIGNID name="summary" mc="NoteType" uid="00000000-0000-3e84-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="deriveDiscount" mc="Signal" uid="e558165a-4c7d-4d70-9d99-eed5e6885496"/>
+    <PID name="Rent" mc="Class" uid="1fd2cbde-aa65-4c7a-88af-f4c8f8eeb843"/>
+    <ATTRIBUTES>
+      <ATT name="IsEvent">false</ATT>
+      <ATT name="IsException">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[deriveDiscount]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="AttributeDefinition" mc="Stereotype" uid="c94cd276-eab4-4494-8d61-fe6c6d7d9231"/>
+      </LINK>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Dependency" uid="c577bbe0-6abc-41d7-91a7-8eb3366fd16b"/>
+          <PID name="deriveDiscount" mc="Signal" uid="e558165a-4c7d-4d70-9d99-eed5e6885496"/>
+          <ATTRIBUTES>
+            <ATT name="DependsOnId"></ATT>
+            <ATT name="DependsOnName"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <REFOBJ>
+                <ID name="discount" mc="Attribute" uid="b3cb8063-03ec-41d7-885b-f91c9d9df33f"/>
+                <PID name="Rent" mc="Class" uid="1fd2cbde-aa65-4c7a-88af-f4c8f8eeb843"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="d73fa5ee-e29b-4ebf-846b-27d8e1cb6b35"/>
+          <PID name="deriveDiscount" mc="Signal" uid="e558165a-4c7d-4d70-9d99-eed5e6885496"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Derivation of the attribute discount.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="summary" mc="NoteType" uid="00000000-0000-3e84-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="bafb000d-11aa-46c1-b1af-f61a2a6c6169"/>
+          <PID name="deriveDiscount" mc="Signal" uid="e558165a-4c7d-4d70-9d99-eed5e6885496"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[The discount for a rent, is the rate of the bedroom multiplied by the sum of percentages of all discounts.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="3054817b-f410-4afb-973f-cee4fd11c036"/>
+          <PID name="deriveDiscount" mc="Signal" uid="e558165a-4c7d-4d70-9d99-eed5e6885496"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="oclDefinition" mc="NoteType" uid="71b316ca-2ef8-456a-80cf-362dad4e339e"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="e1ae1a45-c2df-452a-a5c7-ead1004d31a0"/>
+          <PID name="deriveDiscount" mc="Signal" uid="e558165a-4c7d-4d70-9d99-eed5e6885496"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Easy]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="comment" mc="NoteType" uid="00000000-0000-3e80-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

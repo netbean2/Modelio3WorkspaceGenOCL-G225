@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Notes" version="3">
+  <DEPS>
+    <ID name="Notes" mc="Package" uid="0f7662e8-1dbc-4ed4-bbe1-52290b11b13e"/>
+    <COMPID name="ClassA" mc="Class" uid="3af05fd5-3401-4e6d-a6e8-d3a80811d38e"/>
+    <COMPID name="Notes Class diagram" mc="ClassDiagram" uid="44b2d209-8e36-482f-8d00-d5b4509c8a25"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Notes" mc="Package" uid="0f7662e8-1dbc-4ed4-bbe1-52290b11b13e"/>
+    <PID name="ClassModels" mc="Package" uid="473c4ae8-a95a-46c5-a3c7-6571ed501e18"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Notes]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="ClassA" mc="Class" uid="3af05fd5-3401-4e6d-a6e8-d3a80811d38e"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Notes Class diagram" mc="ClassDiagram" uid="44b2d209-8e36-482f-8d00-d5b4509c8a25"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

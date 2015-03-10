@@ -1,0 +1,111 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="deriveAvgRate" version="3">
+  <DEPS>
+    <ID name="deriveAvgRate" mc="Signal" uid="c0775bd1-f24c-412d-a580-c8ec5118a76e"/>
+    <EXTID name="Residence" mc="Class" uid="97587931-2125-4165-b797-b3d6cb2c2a92"/>
+    <FOREIGNID name="AttributeDefinition" mc="Stereotype" uid="c94cd276-eab4-4494-8d61-fe6c6d7d9231"/>
+    <FOREIGNID name="comment" mc="NoteType" uid="00000000-0000-3e80-0000-000000000000"/>
+    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+    <FOREIGNID name="oclDefinition" mc="NoteType" uid="71b316ca-2ef8-456a-80cf-362dad4e339e"/>
+    <FOREIGNID name="summary" mc="NoteType" uid="00000000-0000-3e84-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="deriveAvgRate" mc="Signal" uid="c0775bd1-f24c-412d-a580-c8ec5118a76e"/>
+    <PID name="Residence" mc="Class" uid="97587931-2125-4165-b797-b3d6cb2c2a92"/>
+    <ATTRIBUTES>
+      <ATT name="IsEvent">false</ATT>
+      <ATT name="IsException">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[deriveAvgRate]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="AttributeDefinition" mc="Stereotype" uid="c94cd276-eab4-4494-8d61-fe6c6d7d9231"/>
+      </LINK>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Dependency" uid="f97115ee-0b2e-432f-8986-4bdc910e09a5"/>
+          <PID name="deriveAvgRate" mc="Signal" uid="c0775bd1-f24c-412d-a580-c8ec5118a76e"/>
+          <ATTRIBUTES>
+            <ATT name="DependsOnId"></ATT>
+            <ATT name="DependsOnName"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <REFOBJ>
+                <ID name="avgRate" mc="Attribute" uid="1ac170ad-074a-4a1b-930e-683482a24675"/>
+                <PID name="Residence" mc="Class" uid="97587931-2125-4165-b797-b3d6cb2c2a92"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="3afb0061-e916-4a26-93a9-1df9bccc0c3c"/>
+          <PID name="deriveAvgRate" mc="Signal" uid="c0775bd1-f24c-412d-a580-c8ec5118a76e"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Derivation of the avgRate attribute.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="summary" mc="NoteType" uid="00000000-0000-3e84-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="2d8d611f-74d8-420d-957b-9692aa36ef04"/>
+          <PID name="deriveAvgRate" mc="Signal" uid="c0775bd1-f24c-412d-a580-c8ec5118a76e"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[The average rate of a residence is the total revenue of the residence divided by the number of occupants. Tutored residents do not count in this rule.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="14f81ae9-a67c-4d4c-a24d-b35461e71d77"/>
+          <PID name="deriveAvgRate" mc="Signal" uid="c0775bd1-f24c-412d-a580-c8ec5118a76e"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[
+]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="oclDefinition" mc="NoteType" uid="71b316ca-2ef8-456a-80cf-362dad4e339e"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="81216adc-c89a-4df4-807c-e733b9bbbfdf"/>
+          <PID name="deriveAvgRate" mc="Signal" uid="c0775bd1-f24c-412d-a580-c8ec5118a76e"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Medium]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="comment" mc="NoteType" uid="00000000-0000-3e80-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

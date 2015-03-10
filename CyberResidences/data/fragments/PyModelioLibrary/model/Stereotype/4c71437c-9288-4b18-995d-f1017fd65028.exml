@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="OperationDefinition" version="3">
+  <DEPS>
+    <ID name="OperationDefinition" mc="Stereotype" uid="4c71437c-9288-4b18-995d-f1017fd65028"/>
+    <EXTID name="Invariant" mc="Stereotype" uid="efef56fa-fa3d-4341-890a-d02000539ad6"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="OperationDefinition" mc="Stereotype" uid="4c71437c-9288-4b18-995d-f1017fd65028"/>
+    <PID name="OclProfile" mc="Profile" uid="41d47382-8c45-4efb-a665-d01daf0b9c8a"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"><![CDATA[OperationDefinition.png]]></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[OperationDefinition]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[TemplateParameter]]></ATT>
+      <ATT name="Name"><![CDATA[OperationDefinition]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Parent">
+        <ID name="Invariant" mc="Stereotype" uid="efef56fa-fa3d-4341-890a-d02000539ad6"/>
+      </LINK>
+      <COMP relation="DefinedNoteType">
+        <OBJECT>
+          <ID name="oclDefinition" mc="NoteType" uid="565cdd73-7218-4fea-aaf6-a0c0dbb18226"/>
+          <PID name="OperationDefinition" mc="Stereotype" uid="4c71437c-9288-4b18-995d-f1017fd65028"/>
+          <ATTRIBUTES>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"><![CDATA[oclDefinition]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="pythonDefinition" mc="NoteType" uid="6df2d260-58d2-4d4f-829d-1ca8d1db860a"/>
+          <PID name="OperationDefinition" mc="Stereotype" uid="4c71437c-9288-4b18-995d-f1017fd65028"/>
+          <ATTRIBUTES>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"><![CDATA[pythonDefinition]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

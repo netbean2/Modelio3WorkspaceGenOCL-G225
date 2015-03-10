@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Constraint" version="3">
+  <DEPS>
+    <ID name="Constraint" mc="Stereotype" uid="8e65b5e3-5b53-4a7e-a890-7b6bce95f51a"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Constraint" mc="Stereotype" uid="8e65b5e3-5b53-4a7e-a890-7b6bce95f51a"/>
+    <PID name="LocalProfile" mc="Profile" uid="4e5faada-d80c-4152-96cc-fd063b797783"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[Constraint]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Note]]></ATT>
+      <ATT name="Name"><![CDATA[Constraint]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

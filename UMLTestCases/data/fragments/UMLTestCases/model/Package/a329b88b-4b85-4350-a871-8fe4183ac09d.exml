@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Attributes_Enumerations" version="3">
+  <DEPS>
+    <ID name="Attributes_Enumerations" mc="Package" uid="a329b88b-4b85-4350-a871-8fe4183ac09d"/>
+    <COMPID name="Attributes_Enumerations Class diagram" mc="ClassDiagram" uid="d0cfa5e8-e655-4449-8de0-4d3f828ae2c9"/>
+    <COMPID name="ClassA" mc="Class" uid="ecff0e36-438f-49a7-aa5f-863f7e6e67a2"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Attributes_Enumerations" mc="Package" uid="a329b88b-4b85-4350-a871-8fe4183ac09d"/>
+    <PID name="ClassModels" mc="Package" uid="473c4ae8-a95a-46c5-a3c7-6571ed501e18"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Attributes_Enumerations]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="ClassA" mc="Class" uid="ecff0e36-438f-49a7-aa5f-863f7e6e67a2"/>
+        <OBJECT>
+          <ID name="EnumerationE" mc="Enumeration" uid="d01e8ec5-95f2-47c9-a473-6ee817255fe1"/>
+          <PID name="Attributes_Enumerations" mc="Package" uid="a329b88b-4b85-4350-a871-8fe4183ac09d"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[EnumerationE]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="el1" mc="EnumerationLiteral" uid="d881d7f3-fdd1-4bbe-a220-ec3fb756554f"/>
+                <PID name="Attributes_Enumerations" mc="Package" uid="a329b88b-4b85-4350-a871-8fe4183ac09d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[el1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="el2" mc="EnumerationLiteral" uid="7cc04cbf-77e2-42b9-82c0-403b88c6ff52"/>
+                <PID name="Attributes_Enumerations" mc="Package" uid="a329b88b-4b85-4350-a871-8fe4183ac09d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[el2]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="el3" mc="EnumerationLiteral" uid="d19c37fc-b626-4569-80b2-e06e7da8ed53"/>
+                <PID name="Attributes_Enumerations" mc="Package" uid="a329b88b-4b85-4350-a871-8fe4183ac09d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[el3]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Attributes_Enumerations Class diagram" mc="ClassDiagram" uid="d0cfa5e8-e655-4449-8de0-4d3f828ae2c9"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

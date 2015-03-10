@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Classes" version="3">
+  <DEPS>
+    <ID name="Classes" mc="Package" uid="8066bc59-15fc-43c2-9365-eecf0cd4a148"/>
+    <COMPID name="AbstractClassB" mc="Class" uid="ee4e590a-7ea9-4d3d-b383-c1f66275094f"/>
+    <COMPID name="ClassA" mc="Class" uid="f4dc79dd-c162-487d-bf91-0754172b0d84"/>
+    <COMPID name="ClassesOnly Class diagram" mc="ClassDiagram" uid="18c7ba2a-c7cb-4e94-900e-a6daf32016fb"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Classes" mc="Package" uid="8066bc59-15fc-43c2-9365-eecf0cd4a148"/>
+    <PID name="ClassModels" mc="Package" uid="473c4ae8-a95a-46c5-a3c7-6571ed501e18"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Classes]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="ClassA" mc="Class" uid="f4dc79dd-c162-487d-bf91-0754172b0d84"/>
+        <COMPID name="AbstractClassB" mc="Class" uid="ee4e590a-7ea9-4d3d-b383-c1f66275094f"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="ClassesOnly Class diagram" mc="ClassDiagram" uid="18c7ba2a-c7cb-4e94-900e-a6daf32016fb"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

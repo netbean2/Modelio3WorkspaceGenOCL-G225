@@ -5,9 +5,9 @@
 =========================================================
 
 FILL THIS SECTION AS SHOWN BELOW AND LINES STARTING WITH ###
-@author Xuan Shong TI WONG SHI <xuan.ti@mydomain.com>
-@author Maria Shohie CEZAR LOPEZ DE ANDERA <maria.cezar@ujf-grenoble.fr>
-@group  G99
+@author Marc-Alexandre Blanchard marc.alexandre.blanchard.pro@gmail.com
+@author Enis Kulla eniskulla89@gmail.com
+@group  G225
 
 Current state of the generator
 ----------------------------------
