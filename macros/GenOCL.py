@@ -125,7 +125,7 @@ def package2OCL(package):
     as USE is not supporting the concept of package.
     """
 
-
+print "--- starting translation"
 
 
 #---------------------------------------------------------
