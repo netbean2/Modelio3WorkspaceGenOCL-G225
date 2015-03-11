@@ -19,7 +19,9 @@ What is good in your generator?
     - class generation
     - association generation
     - composition generation
+    - aggregation generation
     - associationclass generation
+    - cardinality
 What are the current limitations?
     - isTutoredBy from CyberResidence
 
@@ -38,8 +40,10 @@ Which test are working?
     - association_class
     - Associations_Composition
     - Associations_Aggregation
-    - Attributes_visibility - TOCHECK
+    - Attributes_visibility
     - Attributes_cardinality
+    - association_simple
+    -association_ordered
 
 Which are not?
     - Association_unspecified
@@ -47,9 +51,8 @@ Which are not?
     - Association_NARY
     - Notes
 
-To improve
-    -association_simple : visibility missing
-    -association_ordered : visibility missing
+To improve :
+    - 
 
 Observations
 ------------
@@ -91,6 +94,9 @@ def printWithTab(nbtab,content):
 #---------------------------------------------------------
 
 def computeMultiplicity(target):
+    """
+        Compute multiplicity of a an attribute, an association
+    """
     multiplicity=""
     if target.getMultiplicityMin()==target.getMultiplicityMax():
         multiplicity=target.getMultiplicityMin()
@@ -174,7 +180,7 @@ def printAttributesForClass(c):
     if(len(c.getOwnedAttribute())!=0):
         printWithTab(1,"attributes")
         for attribute in c.getOwnedAttribute():
-            attr = UMLVisibility2OCL(attribute.getVisibility())+" "+attribute.getName() + " : " + umlBasicType2OCL(attribute.getType().getName())
+            attr = attribute.getName() + " : " + umlBasicType2OCL(attribute.getType().getName())
             if(computeMultiplicity(attribute)!="1"):
                 attr+=" "+"["+computeMultiplicity(attribute)+"]"
             if(attribute.isIsDerived()) :
@@ -208,9 +214,8 @@ def associations2OCL(target,end):
     """
         print association 2 OCL
     """
-    
     name = target.getAssociation().getName()
-    if contains(name,associationsNames) == False :
+    if contains(name,associationsNames) == False or name == "":
         associationsNames.append(name)
         print "\n"
         if(aggregationToString(target.getAggregation())=="association"):
@@ -282,6 +287,7 @@ def umlClass2OCL(c):
 
     print "end"
 
+    #associations
     if(len(c.getTargetingEnd())==len(c.getOwnedEnd()) and len(c.getOwnedEnd())>0):
         for i in range(0,len(c.getTargetingEnd()),1):
             associations2OCL(c.getTargetingEnd()[i],c.getOwnedEnd()[i])
@@ -328,6 +334,14 @@ def package2OCL(package):
             umlClass2OCL(e)
 
 def UMLVisibility2OCL(visibility):
+    """
+        UNUSED because OCL don't include visibility
+        Convert UML visibility to OCL
+        public -> +
+        private -> -
+        Protected -> #
+        PackageVisibility -> ~
+    """
     if(str(visibility)=="VisibilityUndefined"):
         return ""
     elif(str(visibility)=="Private"):
