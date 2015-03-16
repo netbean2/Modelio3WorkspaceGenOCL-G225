@@ -43,7 +43,7 @@ Which test are working?
     - Attributes_visibility
     - Attributes_cardinality
     - association_simple
-    -association_ordered
+    - association_ordered
 
 Which are not?
     - Association_unspecified
@@ -59,7 +59,7 @@ Observations
 Additional observations could go there
 """
 
-associationsNames = []
+classNames = []
 
 #---------------------------------------------------------
 #   Helpers for the python language
@@ -140,7 +140,16 @@ def associationsInPackage(package):
     arrive to a class which is recursively contained in
     a package.
     """
-    
+    associations = []
+    #for each element in package
+    for e in package.getOwnedElement():
+        #each class
+        if not isinstance(e,Package) and not isAssociationClass(e) and not isEnum(e):
+            for end in e.getOwnedEnd():
+                if end.getAssociation() not in associations:
+                    associations.append(end.getAssociation())
+    return associations
+        
 #---------------------------------------------------------
 #   Helpers for the target representation (text)
 #---------------------------------------------------------
@@ -162,17 +171,6 @@ def aggregationToString(ag):
     else:
         return ""
 
-def printAggregationAttributes(target,end):
-    """
-        print the elements that compose an aggregation
-        an aggregation is 'composition' or 'association'
-    """
-    first = target.getTarget().getName()+"["+computeMultiplicity(target)+"]"+" "+"role"+" "+target.getName()
-    second = end.getTarget().getName()+"["+computeMultiplicity(end)+"]"+" "+"role"+" "+end.getName()
-    printWithTab(1,first)
-    if(first!=second):
-        printWithTab(1,second)
-
 def printAttributesForClass(c):
     """
         print attributes for a class
@@ -186,6 +184,30 @@ def printAttributesForClass(c):
             if(attribute.isIsDerived()) :
                 attr+=" -- @derived"
             printWithTab(2,attr)
+
+def printAssociationContent(association):
+    """
+        used by printAssociation
+    """
+    for end in association.getEnd():
+        res = end.getTarget().getName()+" ["+computeMultiplicity(end) +"] "+"role"+" ";
+        if(end.getName()!=''):
+            res+=end.getName()
+        printWithTab(1,res)
+
+def printAssociation(association):
+    """
+        print association
+    """
+    name = association.getName()
+    associationType = "association"        
+    for end in association.getEnd():
+        if(associationType!=aggregationToString(end.getAggregation()) and aggregationToString(end.getAggregation())!= "association"):
+            associationType=aggregationToString(end.getAggregation())
+    print associationType + " " + name + " " + "between"
+
+    printAssociationContent(association)
+    print "end\n"
 
 def printOperationsForClass(c):
     """
@@ -210,22 +232,17 @@ def printOperationsForClass(c):
 # Another alternative is to produce the output in a
 # string and output the result at the end.
 #---------------------------------------------------------
-def associations2OCL(target,end):
-    """
-        print association 2 OCL
-    """
-    name = target.getAssociation().getName()
-    if contains(name,associationsNames) == False or name == "":
-        associationsNames.append(name)
-        print "\n"
-        if(aggregationToString(target.getAggregation())=="association"):
-            print aggregationToString(end.getAggregation())+" "+name+" "+"between"
-        else:
-            print aggregationToString(target.getAggregation())+" "+name+" "+"between"
-        if(printAggregationAttributes(target,end)!=None):
-            printAggregationAttributes(target,end)
-        print "end"
 
+def umlAssociations2OCL(associations):
+    """
+        Convert an association 2 OCL
+    """
+    print "\n"
+    for association in associations:
+        if not association is None and association.getLinkToClass() is None:
+            printAssociation(association)
+            
+       
 def umlAssociationClass2OCL(c):
     """
         Convert an association class 2 OCL
@@ -236,8 +253,10 @@ def umlAssociationClass2OCL(c):
     className = "associationclass "+c.getName()
     print className
     print "between"
-    for i in range(0,len(c.getTargetingEnd()),1):
-        printAggregationAttributes(c.getTargetingEnd()[i],c.getOwnedEnd()[i])
+
+    #association parts
+    printAssociationContent(c.getLinkToAssociation().getAssociationPart())
+
     #attributes
     printAttributesForClass(c)
     #operations
@@ -246,8 +265,8 @@ def umlAssociationClass2OCL(c):
 
 def umlBasicType2OCL(basicType):
     """
-    Generate USE OCL basic type. Note that
-    type conversions are required.
+        Generate USE OCL basic type. Note that
+        type conversions are required.
     """
     if basicType=="float":
         return "Real"
@@ -264,7 +283,6 @@ def umlClass2OCL(c):
     """
         Convert a class to OCL
     """
-
     print "\n"
 
     #class name
@@ -286,11 +304,6 @@ def umlClass2OCL(c):
     printOperationsForClass(c)
 
     print "end"
-
-    #associations
-    if(len(c.getTargetingEnd())==len(c.getOwnedEnd()) and len(c.getOwnedEnd())>0):
-        for i in range(0,len(c.getTargetingEnd()),1):
-            associations2OCL(c.getTargetingEnd()[i],c.getOwnedEnd()[i])
 
 def umlEnumeration2OCL(enumeration):
     """
@@ -332,6 +345,8 @@ def package2OCL(package):
         #a class
         else:
             umlClass2OCL(e)
+    #association
+    umlAssociations2OCL(associationsInPackage(package))
 
 def UMLVisibility2OCL(visibility):
     """
@@ -357,6 +372,9 @@ def UMLVisibility2OCL(visibility):
 
 #Called at launch check parameters then proceed to build
 def main():
+    """
+        launch at startup
+    """
     #you don't select smthg
     if len(selectedElements)==0:   
         print indent(4)+"Ah no, sorry. You have no selected elements."
