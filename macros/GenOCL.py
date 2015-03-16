@@ -235,7 +235,7 @@ def printOperationsForClass(c):
 
 def umlAssociations2OCL(associations):
     """
-        Convert an association 2 OCL
+        Convert associations 2 OCL
     """
     print "\n"
     for association in associations:
