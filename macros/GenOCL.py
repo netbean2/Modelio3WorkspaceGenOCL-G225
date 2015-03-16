@@ -43,12 +43,12 @@ Which test are working?
     - Attributes_visibility
     - Attributes_cardinality
     - association_simple
+    - association_ordered
 
 Which are not?
     - Association_unspecified
     - Association_qualified
     - Association_NARY
-    - association_ordered
     - Notes
 
 To improve :
@@ -193,6 +193,8 @@ def printAssociationContent(association):
         res = end.getTarget().getName()+" ["+computeMultiplicity(end) +"] "+"role"+" ";
         if(end.getName()!=''):
             res+=end.getName()
+            if(end.isIsOrdered()):
+                res+=" ordered"
         printWithTab(1,res)
 
 def printAssociation(association):
@@ -204,7 +206,8 @@ def printAssociation(association):
     for end in association.getEnd():
         if(associationType!=aggregationToString(end.getAggregation()) and aggregationToString(end.getAggregation())!= "association"):
             associationType=aggregationToString(end.getAggregation())
-    print associationType + " " + name + " " + "between"
+    res = associationType + " " + name + " " + "between"
+    print res
 
     printAssociationContent(association)
     print "end\n"
@@ -377,9 +380,9 @@ def main():
     """
     #you don't select smthg
     if len(selectedElements)==0:   
-        print indent(4)+"Ah no, sorry. You have no selected elements."
+        print indent(4)+"--Ah no, sorry. You have no selected elements."
     else:
-        print 'they are {nb} elements'.format(nb=len(selectedElements))
+        print '--they are {nb} elements'.format(nb=len(selectedElements))
         for c in selectedElements:
             if isinstance(c,Package):
                 package2OCL(c)
