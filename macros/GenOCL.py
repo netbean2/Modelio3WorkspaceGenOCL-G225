@@ -383,6 +383,7 @@ def main():
         print indent(4)+"--Ah no, sorry. You have no selected elements."
     else:
         print '--they are {nb} elements'.format(nb=len(selectedElements))
+        print 'model G225'
         for c in selectedElements:
             if isinstance(c,Package):
                 package2OCL(c)
