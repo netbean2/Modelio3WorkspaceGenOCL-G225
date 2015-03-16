@@ -116,6 +116,9 @@ def isAssociationClass(element):
     return False
     
 def isEnum(element):
+    """
+        tells if element is enum
+    """
     try:
         element.getValue()
         return True
@@ -150,6 +153,9 @@ def associationsInPackage(package):
     return associations
 
 def associationsNaryInPackage(package):
+    """
+        return all associationsNary in package
+    """
     associations = []
     #for each element in package
     for e in package.getOwnedElement():
@@ -214,6 +220,9 @@ def printAssociationContent(association):
         printWithTab(1,res)
 
 def printNaryAssociation(association):
+    """
+        print an nary association
+    """
     if(association.getName()!=""):
         name = association.getName()
     else:
@@ -279,6 +288,9 @@ def printOperationsForClass(c):
 #---------------------------------------------------------
 
 def umlAssociationsNary2OCL(associations):
+    """
+        convert associationsNary 2 OCL
+    """
     for association in associations:
         printNaryAssociation(association)
 
