@@ -43,12 +43,12 @@ Which test are working?
     - Attributes_visibility
     - Attributes_cardinality
     - association_simple
-    - association_ordered
 
 Which are not?
     - Association_unspecified
     - Association_qualified
     - Association_NARY
+    - association_ordered
     - Notes
 
 To improve :
