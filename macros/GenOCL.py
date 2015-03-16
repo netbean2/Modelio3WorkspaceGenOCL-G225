@@ -145,7 +145,9 @@ def associationsInPackage(package):
     for e in package.getOwnedElement():
         #each class
         if not isinstance(e,Package) and not isAssociationClass(e) and not isEnum(e):
+            #for all associations
             for end in e.getOwnedEnd():
+                #smart add
                 if end.getAssociation() not in associations:
                     associations.append(end.getAssociation())
     return associations
