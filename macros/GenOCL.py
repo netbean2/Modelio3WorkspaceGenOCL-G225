@@ -45,10 +45,10 @@ Which test are working?
     - association_simple
     - association_ordered
     - Association_unspecified
+    - Association_NARY
 
 Which are not?
     - Association_qualified
-    - Association_NARY
     - Notes
 
 To improve :
@@ -131,7 +131,6 @@ def isEnum(element):
 # intended to be reusable. 
 #--------------------------------------------------------- 
 
-# example UNUSED
 def associationsInPackage(package):
     """
     Return the list of all associations that start or
@@ -148,6 +147,19 @@ def associationsInPackage(package):
                 #smart add
                 if end.getAssociation() not in associations:
                     associations.append(end.getAssociation())
+    return associations
+
+def associationsNaryInPackage(package):
+    associations = []
+    #for each element in package
+    for e in package.getOwnedElement():
+        #each class
+        if not isinstance(e,Package) and not isAssociationClass(e) and not isEnum(e):
+            #for all associations
+            for end in e.getOwnedNaryEnd():
+                #smart add
+                if end.getNaryAssociation() not in associations:
+                    associations.append(end.getNaryAssociation())
     return associations
         
 #---------------------------------------------------------
@@ -201,6 +213,29 @@ def printAssociationContent(association):
                 res+=" ordered"
         printWithTab(1,res)
 
+def printNaryAssociation(association):
+    if(association.getName()!=""):
+        name = association.getName()
+    else:
+        name = str(association.getUuid())
+    associationType = "association"
+
+    res = associationType + " " + name + " " + "between"
+    print res
+    for end in association.getNaryEnd():
+        if(end.getName()==""):
+            name=""
+        else:
+            name=end.getOwner().getName()
+        res = name+" ["+computeMultiplicity(end) +"] ";
+        if(end.getName()!=''):
+            res+="role"+" "+end.getName()
+            if(end.isIsOrdered()):
+                res+=" ordered"
+        printWithTab(1,res)
+
+    print "end\n"
+
 def printAssociation(association):
     """
         print association
@@ -242,6 +277,10 @@ def printOperationsForClass(c):
 # Another alternative is to produce the output in a
 # string and output the result at the end.
 #---------------------------------------------------------
+
+def umlAssociationsNary2OCL(associations):
+    for association in associations:
+        printNaryAssociation(association)
 
 def umlAssociations2OCL(associations):
     """
@@ -357,6 +396,7 @@ def package2OCL(package):
             umlClass2OCL(e)
     #association
     umlAssociations2OCL(associationsInPackage(package))
+    umlAssociationsNary2OCL(associationsNaryInPackage(package))
 
 def UMLVisibility2OCL(visibility):
     """
