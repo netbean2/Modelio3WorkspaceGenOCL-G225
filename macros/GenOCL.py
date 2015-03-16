@@ -44,9 +44,9 @@ Which test are working?
     - Attributes_cardinality
     - association_simple
     - association_ordered
+    - Association_unspecified
 
 Which are not?
-    - Association_unspecified
     - Association_qualified
     - Association_NARY
     - Notes
@@ -190,9 +190,13 @@ def printAssociationContent(association):
         used by printAssociation
     """
     for end in association.getEnd():
-        res = end.getTarget().getName()+" ["+computeMultiplicity(end) +"] "+"role"+" ";
+        if(end.getName()==""):
+            name=end.getSource().getName()
+        else:
+            name=end.getTarget().getName()
+        res = name+" ["+computeMultiplicity(end) +"] ";
         if(end.getName()!=''):
-            res+=end.getName()
+            res+="role"+" "+end.getName()
             if(end.isIsOrdered()):
                 res+=" ordered"
         printWithTab(1,res)
@@ -201,7 +205,10 @@ def printAssociation(association):
     """
         print association
     """
-    name = association.getName()
+    if(association.getName()!=""):
+        name = association.getName()
+    else:
+        name = str(association.getUuid())
     associationType = "association"        
     for end in association.getEnd():
         if(associationType!=aggregationToString(end.getAggregation()) and aggregationToString(end.getAggregation())!= "association"):
