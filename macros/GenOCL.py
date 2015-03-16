@@ -59,8 +59,6 @@ Observations
 Additional observations could go there
 """
 
-classNames = []
-
 #---------------------------------------------------------
 #   Helpers for the python language
 #---------------------------------------------------------
